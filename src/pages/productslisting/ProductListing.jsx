@@ -1,8 +1,11 @@
+//This section is used as a homepage in this section posts has been imported and then it is imported from post section to render all the 
+//product card
 import React from 'react'
 import Navbar2 from '../../components/Navbar2/Navbar2'
 import styles from "./ProductListing.module.css";
 import cat from '../../assets/cat.webp'
 import Posts from '../../components/posts/posts'
+import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
 export default function ProductListing() {
   return (
@@ -28,6 +31,7 @@ export default function ProductListing() {
     <Posts />
   </div>
   </div>
+ 
   
   </>
   )

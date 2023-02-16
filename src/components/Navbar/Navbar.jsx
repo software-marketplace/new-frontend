@@ -23,6 +23,7 @@ const Navbar = () => {
           <MenuIcon />
         </div> 
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
+        
           <ul>
             <li>
              Apps
@@ -42,6 +43,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        
       </div>
     </nav>
   )

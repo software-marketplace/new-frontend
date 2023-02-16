@@ -1,6 +1,10 @@
+
+            // For now This navbar has been used in the whole website page
+            // login and signup modal is imported from LoginSignup page and then imported from components part from Login/Signup page
+
 import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
-// import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
+
 import '../../components/Navbar/navbar.css'
 import LoginSignup from '../../pages/login-signupmodal/loginSignup';
 import { Link } from 'react-router-dom';
@@ -18,13 +22,15 @@ const Navbar = () => {
     <>
     <nav className="navbar">
       <div className="container">
+     
          <div className="leftName1">
             DevHustle
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <MenuIcon />
         </div> 
-        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+      
+         <div className={`nav-elements  ${showNavbar && 'active'}`}>  
           <ul>
             <li>
              Products
@@ -40,7 +46,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
+        </div>
       {isModalOpen && <LoginSignup setIsModalOpen={setIsModalOpen} className="pos"/>}
       </nav>
       

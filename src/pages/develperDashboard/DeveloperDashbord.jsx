@@ -1,3 +1,6 @@
+
+                            // this is the route page after onclick of For developer page in Navbar2
+
 import React from 'react'
 import AddIcon from '@mui/icons-material/Add';
 import styles from './DeveloperDashboard.module.css'
