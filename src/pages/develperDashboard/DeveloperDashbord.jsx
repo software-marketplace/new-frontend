@@ -10,29 +10,32 @@ import FlareIcon from '@mui/icons-material/Flare';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import user from '../../assets/user.png'
 import BottomModal from '../../components/smallModal/Modal';
+import Navbar from '../../components/Navbar/Navbar'
 
 export default function DeveloperDashbord() {
   return (
     <>
-<div className={styles.pageHolder}> 
-    <div className={styles.row}>
-        <div className={styles.left}>
-            <h2 className={styles.Icon1}><span className={styles.a}><FlareIcon /></span>Devhustle</h2>
-            <h4>PROJECTS</h4>
-            <span className={styles.Icon}><span > <AddIcon /></span> Upload Projects</span>
-            <h4>OFFERS</h4>
-            <div className={styles.bottomSection}>
-              <span className={styles.Icon}><span > <DynamicFormIcon /></span>Create Coupon Code</span>
-              <span className={styles.Icon}> <span > <ListAltIcon /></span>View Existing Coupon</span>
-            </div>
-            </div>
-
-        <div className={styles.right}>
-            <span><img src={user} alt="/"/></span>
-            </div>
+    <div>
+      <Navbar />
     </div>
-    <BottomModal />
-</div>
+      <div>
+          <div className={styles.left}>
+           
+            <h2 className={styles.LeftSideContent}><span className={styles.a}><FlareIcon /></span>Devhustle</h2>
+            <h4 className={styles.SideContent}>PROJECTS</h4>
+            <span className={styles.SideContent}><span > <AddIcon /></span> Upload Projects</span>
+            <h4 className={styles.SideContent}>OFFERS</h4>
+            <span className={styles.SideContent}><span > <DynamicFormIcon /></span>Create Coupon Code</span>
+            <span className={styles.SideContent}> <span > <ListAltIcon /></span>View Existing Coupon</span>
+            <span className={styles.SideContent}><button className={styles.ContactButton}>Chat with customer</button></span>
+        
+          <div className={styles.right}>
+          {/* <BottomModal /> */}
+          </div>
+          </div>
+      </div>
+   
+{/* </div> */}
 
     </>
   )
