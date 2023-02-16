@@ -2,15 +2,20 @@ import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 // import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
 import '../../components/Navbar/navbar.css'
+import LoginSignup from '../../pages/login-signupmodal/loginSignup';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
+  const [isModalOpen,setIsModalOpen] = useState(false);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
   }
 
   return (
+    <>
     <nav className="navbar">
       <div className="container">
          <div className="leftName1">
@@ -27,16 +32,20 @@ const Navbar = () => {
             <li>
               FAQ
             </li>
-            <li>
+            <li onClick={() => setIsModalOpen(true)}>
               Login
             </li>
             <li>
-             <button className='button1'>For Developers</button>
+             <Link to="/developer"><button className='button1'>For Developers</button></Link>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+      {isModalOpen && <LoginSignup setIsModalOpen={setIsModalOpen} className="pos"/>}
+      </nav>
+      
+      </>
+    
   )
 }
 

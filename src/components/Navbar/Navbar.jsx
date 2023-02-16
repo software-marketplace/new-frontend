@@ -2,9 +2,12 @@ import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 // import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
 import './navbar.css'
+import LoginSignup from '../../pages/login-signupmodal/loginSignup';
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
+  const [showNavbar, setShowNavbar] = useState(false);
+  const [isModalOpen,setIsModalOpen] = useState(false);
+
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
@@ -34,7 +37,8 @@ const Navbar = () => {
              Contact
             </li>
             <li>
-             <button className='button'>Login</button>
+             <button className='button' onClick={() => setIsModalOpen(true)}>Login</button>
+             {isModalOpen && <LoginSignup setIsModalOpen={setIsModalOpen}/>}
             </li>
           </ul>
         </div>

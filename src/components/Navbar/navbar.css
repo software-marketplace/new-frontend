@@ -1,21 +1,19 @@
 
 .container {
-  /* max-width: 1100px; */
   margin: 0 20px;
   padding: 0 15px;
   display: flex;
   justify-content:space-between;
   align-items: center;
   height: 100%;
-  position: sticky;
-  
- 
+  position: relative;
 }
 
 .navbar {
   height: 60px;
   background-color: white;
-  position: relative;
+  position:fixed;
+  width: 100%;
   top: 0px;
   
 }
@@ -50,6 +48,7 @@
 .nav-elements ul li:not(:last-child) {
   margin-right: 60px;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .nav-elements ul a {
@@ -82,6 +81,13 @@
     letter-spacing: 3px;
     font-size: small;
     font-weight: 400;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.button:hover{
+  background-color: white;
+  color: black;
+ 
 }
 .button1{
     background-color: green;
@@ -90,6 +96,7 @@
     letter-spacing: 2px;
     font-weight: 500;
     border: none;
+    cursor: pointer;
 
 }
 
@@ -129,4 +136,9 @@
     margin-right: unset;
     margin-top: 22px;
   }
+}
+.pos{
+  position: absolute;
+  margin: auto;
+  top: 50%;
 }

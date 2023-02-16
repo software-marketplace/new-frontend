@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './homepage.css'
 import cat from '../../assets/cat.webp'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export default function Homepage() {
+ 
+
   return (
     <>
     <div>
