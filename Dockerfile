@@ -1,12 +1,13 @@
-FROM node-alpine
+FROM node:alpine
 
 RUN mkdir -p /usr/app
 WORKDIR /usr/app
 
-COPY package.json package.lock ./
-RUN yarn install
-RUN yarn build
+COPY package.json tsconfig.json ./
+RUN yarn install 
 
 COPY . .
+
+RUN yarn build
 
 ENTRYPOINT [ "yarn", "start" ]
