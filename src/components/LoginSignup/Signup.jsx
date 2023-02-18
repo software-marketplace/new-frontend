@@ -4,22 +4,31 @@ import CloseIcon from '@mui/icons-material/Close';
 
 export default function Signup({setLoginClose,setIsModalOpen}) {
   return (
-    <div className='Container1'>
-        <div className='contentContainer'> 
-      <span className='headerSection'>SignUp/</span><span onClick={() => setLoginClose(true)} className='shiftSection'>Login</span>
+    <div className="wrapper login">
+    <div className="container2">
+      <div className="col-left">
+        <div className="login-text">
+          <h2>Welcome!</h2>
+          <p>Already have an account.<br />Please Login</p> <a href className="btn" onClick={() => setLoginClose(true)}>Login</a>
+          
+        </div>
+      </div>
       <CloseIcon className='closeIcon'  onClick={() =>setIsModalOpen(false)}  />
-      <div className='inputSection'>
-          <input placeholder='Name' className='input'></input>
-          <input placeholder='Email' className='input'></input>
-          <input placeholder='Password' className='input'></input>
-          <input placeholder='Phone Number' className='input'></input>
+      <div className="col-right">
+        <div className="login-form">
+          <h2>SignUp</h2> 
+          <form action>
+          <p> <label>Name<span>*</span></label> <input type="text" placeholder="Username" required /> </p>
+          <p> <label>Email address<span>*</span></label> <input type="text" placeholder="Email Address" required /> </p>
+          <p> <label>Password<span>*</span></label> <input type="password" placeholder="Password" required /> </p>
+          <p> <label>Phone Number<span>*</span></label> <input type="Number" placeholder="91+........." required /> </p>
          
-      </div>
-      <div className='bottomSection'>
-        <button>Signup</button><br/>
-     
-      </div>
+            <p> <input type="submit" defaultValue="Sign In" /> </p>
+            
+          </form>
+        </div>
       </div>
     </div>
+  </div>
   )
 }
