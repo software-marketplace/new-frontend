@@ -5,14 +5,49 @@
     position: relative;
 }
 
-.row{
+/* .row{
 display: flex;
 justify-content: center;
 align-items: flex-start;
 margin: 2% 0%;
 text-align: center;
-}
-.left{
+} */
+/* .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+  } */
+  .left {
+    float: left;
+    width: 20%;
+    background-color:green;
+    height: calc(100vh);
+    
+  }
+  .right {
+    width: 70%;
+  }
+  .ContactButton{
+    /* margin-top: 20%; */
+    width: 70%;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 1em; */
+    background: green;
+    border-color: white;
+    color: white;
+  }
+  .ContactButton:hover{
+    background-color: white;
+    border-color: green;
+    color: green;
+  }
+/* .left{
 flex: 4;
 display: flex;
 padding: 0px 1%;
@@ -23,33 +58,28 @@ align-items: flex-start;
 .left h2{
     margin-bottom: 50px;
     font-size: x-large;
-}
 .Icon{
     text-align: center;
-    /* margin-bottom: 50px; */
+     margin-bottom: 50px; 
     display:flex;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 15px; 
     font-size: medium;
     align-items: center;
     cursor: pointer;
-    /* padding-bottom:10px ; */
+    padding-bottom:10px ; 
 }
 .Icon1{
-    text-align: center;
+     text-align: center;
     display:flex;
-    justify-content:flex-end;
-    gap:5px;
+    justify-content:  flex-start;
+    gap:5px; 
     font-size: medium;
 }
 
-.bottomSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
+ 
+
+
 .right{
 flex: 8;
 }
@@ -68,9 +98,28 @@ flex: 8;
 .right img{
     height: 100%;
     width: 100%;
-}
+}  */
 
-                           /* css for the popup section */
+.LeftSideContent{
+    display:flex; 
+    justify-content: center;
+    margin: 0.5em;
+    color: white;
+   }
+.SideContent{
+    display: flex;
+    justify-content: flex-start;
+    margin: 2em;
+    color: white;
+}
+.bottomSection{
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   /* margin: 2em; */
+   color: white;
+}
+/* css for the popup section 
 .modal{
     display: flex;
     justify-content: center;
@@ -81,11 +130,11 @@ flex: 8;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 5px;
     padding: 0px 10px;
-    /* transform: translateY(20%); */
+    transform: translateY(20%);
     bottom: 10px;
-    position:absolute;
+    /* position:absolute; 
 }
-.circle{
+ .circle{
  width: 30px;
  height: 30px;
  background-color: rgb(167, 166, 166);
@@ -104,4 +153,4 @@ flex: 8;
         height: 40px;
         width: 40px;
     }
-}
+} */
