@@ -6,6 +6,7 @@ import styles from "./ProductListing.module.css";
 import cat from '../../assets/cat.webp'
 import Posts from '../../components/posts/posts'
 import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
+import FaqSection from '../Faqsection/FaqSection';
 
 export default function ProductListing() {
   return (
@@ -31,8 +32,11 @@ export default function ProductListing() {
     <Posts />
   </div>
   </div>
- 
-  
+     
+
+
+     {/* .........This faq section was because i was working on faq section kindly ignore it.......... */}
+  {/* <FaqSection /> */}
   </>
   )
 }
