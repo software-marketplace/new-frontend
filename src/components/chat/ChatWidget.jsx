@@ -5,15 +5,15 @@ import 'react-chat-widget/lib/styles.css';
 
 const buttons = [{ label: 'first', value: '1' }, { label: 'second', value: '2' }];
 
-function ChatWidget() {
+function ChatWidget({username,devUsername}) {
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState({});
   const [selectedUser, setSelectedUser] = useState({});
   let devUsername;
 
   useEffect(() => {
-    const username = prompt("Enter name");
-    devUsername = prompt("Enter name of developer");
+    // const username = prompt("Enter name");
+    // devUsername = prompt("Enter name of developer");
 
     for(let i=0;i<users.length;i++)
     {
