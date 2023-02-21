@@ -43,7 +43,7 @@
     margin-bottom: 10px;
  }
  .stars{
-  color: gold;
+  color: rgb(1, 54, 1);
  }
  .buttonDiv{
   width: 100%;
@@ -64,3 +64,118 @@
     font-weight: 500;
 
  }
+a
+{
+    text-decoration: none;
+}
+.product-card {
+    width: 320px;
+    /* position: relative; */
+    /* box-shadow: 0 2px 7px #dfdfdf; */
+    margin: 50px auto;
+    background: #fafafa;
+    border: 0.4px solid rgb(231, 228, 228);
+    border-radius: 10px;
+}
+.product-card:hover{
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 5px 10px rgb(204, 250, 204);
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background: #fcfafa;
+    border-radius: 10px;
+    margin-bottom: -30px;
+}
+
+.product-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-details {
+    padding:  10px 30px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(226, 243, 226);
+    /* border-radius: 10px; */
+    /* border-bottom: ; */
+    /* transform: translateY(-50%); */
+}
+
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+   
+}
+
+.product-details h4 a {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #565555;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 0.6px solid #c2c0c0;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color:green;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: rgb(147, 145, 145);
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: green;
+}

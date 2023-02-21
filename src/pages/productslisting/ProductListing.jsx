@@ -24,9 +24,9 @@ export default function ProductListing() {
    </div>
    <div className={styles.right}><img src={cat} /></div>
   </div>
-  <div className={styles.productLister}>
-  EXPLORE
-  </div>
+ 
+  <h2  className={styles.productLister}>OUR BEST SELLERS</h2>
+
   <div>
     <Posts />
   </div>

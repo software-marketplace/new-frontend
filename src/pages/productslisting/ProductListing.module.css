@@ -38,8 +38,10 @@
 }
 .productLister{
     font-weight: 700;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-size: 30px;
+    text-align: center;
+    height: auto;
 }
 
 @media (max-width:800px){
