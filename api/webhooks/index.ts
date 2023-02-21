@@ -4,9 +4,6 @@ import { Products } from "../../model";
 const router = Router();
 
 router.post('/config', async (req: Request, res: Response) => {
-    // const productExist = await Products.find({ repository: req.body.repo })
-
-    // if (productExist.length > 0) {
     Products.findOneAndUpdate(
         { repository: req.body.repository },
         {
@@ -22,7 +19,6 @@ router.post('/config', async (req: Request, res: Response) => {
             return res.send({ "error": err })
         }
     )
-    // }
 })
 
 export default router;
