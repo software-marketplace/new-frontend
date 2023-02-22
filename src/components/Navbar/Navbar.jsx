@@ -1,51 +1,53 @@
 import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
-// import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
-import './navbar.css'
+
+import '../../components/Navbar/navbar.css'
 import LoginSignup from '../../pages/login-signupmodal/loginSignup';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false)
   const [isModalOpen,setIsModalOpen] = useState(false);
-
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
   }
 
   return (
+    <>
     <nav className="navbar">
       <div className="container">
-         <div className="leftName">
-            DEVHUSTLE
+     
+         <div className="leftName1">
+            DevHustle
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <MenuIcon />
         </div> 
-        <div className={`nav-elements  ${showNavbar && 'active'}`}>
-        
+      
+         <div className={`nav-elements  ${showNavbar && 'active'}`}>  
           <ul>
             <li>
-             Apps
+             Products
             </li>
             <li>
               FAQ
             </li>
-            <li>
-              About
+            <li onClick={() => setIsModalOpen(true)}>
+              Login
             </li>
-            <li>
-             Contact
-            </li>
-            <li>
-             <button className='button' onClick={() => setIsModalOpen(true)}>Login</button>
-             {isModalOpen && <LoginSignup setIsModalOpen={setIsModalOpen}/>}
-            </li>
+            {/* <li>
+             <Link to="/developer"><button className='button1'>For Developers</button></Link>
+            </li> */}
           </ul>
         </div>
-        
-      </div>
-    </nav>
+        </div>
+      {isModalOpen && <LoginSignup setIsModalOpen={setIsModalOpen} className="pos"/>}
+      </nav>
+      
+      </>
+    
   )
 }
 

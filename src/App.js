@@ -11,6 +11,7 @@ import LoginSignup from './pages/login-signupmodal/loginSignup'
 import DeveloperDashbord from './pages/develperDashboard/DeveloperDashbord'
 // import Navbar from './components/Navbar/Navbar';
 import SingleProduct from './pages/productOpen.jsx/SingleProduct';
+import UserDashboard from './pages/userDashboard/userDashboard'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route index element={ <ProductListing />} />
         <Route path="developer" element={ <DeveloperDashbord />} />
         <Route path="product" element={ <SingleProduct />} />
+        <Route path="userDashboard" element={ <UserDashboard />} />
       </Route>
     </Routes>
     </BrowserRouter>

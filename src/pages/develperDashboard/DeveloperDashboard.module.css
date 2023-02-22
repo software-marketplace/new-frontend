@@ -1,32 +1,11 @@
-.pageHolder{
-    height: 95vh;
-    /* width: 100%; */
-    /* padding: 0px 10%; */
-    position: relative;
-}
 
-/* .row{
-display: flex;
-justify-content: center;
-align-items: flex-start;
-margin: 2% 0%;
-text-align: center;
-} */
-/* .row {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-  } */
+
+
   .left {
     float: left;
     width: 20%;
     background-color:green;
-    height: calc(100vh);
-    
+    height:90vh;
   }
   .right {
     width: 70%;
@@ -49,61 +28,10 @@ text-align: center;
     transition:0.2s ease-in;
     cursor: pointer;
   }
-/* .left{
-flex: 4;
-display: flex;
-padding: 0px 1%;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-}
-.left h2{
-    margin-bottom: 50px;
-    font-size: x-large;
-.Icon{
-    text-align: center;
-     margin-bottom: 50px; 
-    display:flex;
-    justify-content: flex-end;
-    gap: 15px; 
-    font-size: medium;
-    align-items: center;
-    cursor: pointer;
-    padding-bottom:10px ; 
-}
-.Icon1{
-     text-align: center;
-    display:flex;
-    justify-content:  flex-start;
-    gap:5px; 
-    font-size: medium;
-}
 
- 
-
-
-.right{
-flex: 8;
-}
-.right{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.right span{
-   height: 50px;
-   width: 50px;
-   margin-right: 50px;
-   margin-top: 1%;
-
-}
-.right img{
-    height: 100%;
-    width: 100%;
-}  */
 
 .LeftSideContent{
-    display:flex; 
+    /* display:flex;  */
     justify-content: center;
     margin: 0.5em;
     color: white;
@@ -114,44 +42,24 @@ flex: 8;
     margin: 2em;
     color: white;
 }
-.bottomSection{
-   display: flex;
-   flex-direction: column;
-   justify-content: start;
-   color: white;
+.SideContent span{
+  margin-right: 5px;
+  margin-top: -4px;
 }
-/* css for the popup section 
-.modal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    height: max-content;
-    width: max-content;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border-radius: 5px;
-    padding: 0px 10px;
-    transform: translateY(20%);
-    bottom: 10px;
-    /* position:absolute; 
+
+@media(min-width:500px) and (max-width:1000px){
+  .left{
+    width: 30%;
+  }
 }
- .circle{
- width: 30px;
- height: 30px;
- background-color: rgb(167, 166, 166);
- border-radius: 50%;
-}
-@media(max-width:750px){
-    .row{
-        flex-direction: column;
-        gap: 50px;
-    }
-    .right {
-      margin-left: 10%;
-     
-    }
-    .right img{
-        height: 40px;
-        width: 40px;
-    }
+
+@media(max-width:500px){
+   .left{
+    width: 45%;
+   }
+} 
+/* @media(min-width:800px) and (max-width:1000px){
+  .left{
+    width: 40%;
+  }
 } */

@@ -12,14 +12,10 @@ export default function SingleProduct() {
           <article className="recipe bigBox">
             <div className="pizza-box productImage">
               <img src={cat} 
-              // width={1500} height={1600} 
               alt="" />
             </div>
             <div className="recipe-content">
-              <p className="recipe-tags">
-                {/* <span className="recipe-tag">Gluten Free</span> */}
-                {/* <span className="recipe-tag">Main dish</span> */}
-              </p>
+             
               <h1 className="recipe-title"><a href="#">Ecommerce Website</a></h1>
               <p className="recipe-metadata">
                 <span className="recipe-rating">★★★★<span>☆</span></span>
@@ -52,13 +48,13 @@ export default function SingleProduct() {
           </article>
         </div>
         <div className="small">
-          <article className="recipe side">
+          <article className=" side">
             <div className="pizza-box side1">
               <img src={cat} 
               // width={130} height={120} 
               alt="" />
             </div>
-            <div className="recipe-content">
+            <div className="recipe-content1">
               <p className="recipe-tags">
                 <span className="recipe-tag">Flutter developer</span>
                 <span className="recipe-tag">Mern Expert</span>
