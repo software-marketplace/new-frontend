@@ -51,7 +51,7 @@ letter-spacing: 1px;
   .footer-content-column {
       box-sizing: border-box;
       float: left;
-      border-left: 0.3px solid rgb(211, 208, 208);
+      /* border-left: 0.3px solid rgb(211, 208, 208); */
       padding-left: 15px;
       padding-right: 15px;
       width:max-content;
@@ -155,10 +155,10 @@ letter-spacing: 1px;
   }
 
   .footer-copyright {
-      background-color: #dcf3f9;
+      background-color: #f1f8fa;
       color: #2c2c2c;
-      border-top: 0.6px solid rgb(177, 177, 177);
-      padding: 10px 30px;
+      /* border-top: 0.6px solid rgb(177, 177, 177); */
+      padding: 5px 20px;
     text-align: center;
   }
   
@@ -167,8 +167,11 @@ letter-spacing: 1px;
       margin-right: auto;
       display: flex;
       /* width: 80%; */
+      padding: 5px;
+      border-top: 0.6px solid rgb(177, 177, 177);
+      height: 100%;
       justify-content: space-between;
-      max-width: 1200px;
+      width: 100%;
       align-items: center;
   }
   .icons-holder{
