@@ -32,7 +32,7 @@ export default function ProductListing() {
     <Posts />
   </div>
   </div>
-  <Footer />
+  {/* <Footer /> */}
      
 
 

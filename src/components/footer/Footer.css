@@ -10,8 +10,9 @@
     font-family: 'Roboto', sans-serif;
   }
   .footer {
-      background-color: #f1f8fa;
+      background-color: #fff;
       color: #020202;
+      margin-top: 10px;
   }
   .footer-wave-svg {
       background-color: transparent;
@@ -155,7 +156,7 @@ letter-spacing: 1px;
   }
 
   .footer-copyright {
-      background-color: #f1f8fa;
+      background-color: #fff;
       color: #2c2c2c;
       /* border-top: 0.6px solid rgb(177, 177, 177); */
       padding: 5px 20px;

@@ -3,13 +3,13 @@ import './SingleProduct.scss'
 import cat from '../../assets/cat.webp'
 import Navbar2 from '../../components/Navbar2/Navbar'
 import ModalImage from "react-modal-image";
-// import Lightbox from 'react-image-lightbox';
+
 import ImageSection from '../../components/misleneous/imagesDisplay';
-import 'react-image-lightbox/style.css';
+
 import { LightBox } from 'react-lightbox-pack'; // <--- Importing LightBox Pack
 import "react-lightbox-pack/dist/index.css";
 import data from './data/data.json'; 
-import {Lightbox} from 'react-lightbox-component';
+
 
 
 
