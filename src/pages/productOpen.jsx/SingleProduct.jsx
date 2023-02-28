@@ -1,31 +1,81 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './SingleProduct.scss'
 import cat from '../../assets/cat.webp'
 import Navbar2 from '../../components/Navbar2/Navbar'
+import ModalImage from "react-modal-image";
+// import Lightbox from 'react-image-lightbox';
+import ImageSection from '../../components/misleneous/imagesDisplay';
+import 'react-image-lightbox/style.css';
+import { LightBox } from 'react-lightbox-pack'; // <--- Importing LightBox Pack
+import "react-lightbox-pack/dist/index.css";
+import data from './data/data.json'; 
+import {Lightbox} from 'react-lightbox-component';
+
+
 
 export default function SingleProduct() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [imgIndex, setImgIndex] = useState(0);
+  // const [imgIndex, setImgIndex] = useState(0);
+
+  const [toggle, setToggle] = useState(false);
+	const [sIndex, setSIndex] = useState(0);
+
+	// Handler
+	const  lightBoxHandler  = (state, sIndex) => {
+		setToggle(state);
+		setSIndex(sIndex);
+	};
+
+  
   return (
     <>
      <Navbar2/>
        <div className='yes'>
         <div className="big">
           <article className="recipe bigBox">
-            <div className="pizza-box productImage">
-              <img src={cat} 
-              alt="" />
+            <div className='imageHolder'>
+            {data.map((item, index) => (
+              <>
+            <div className="pizza-box productImage" key={item.id}>
+           
+               <img  src={item.image}  className="img" onClick={() => {
+					lightBoxHandler(true, index);
+					}}
+              alt="" /> 
+              
+              
+                </div>
+        <LightBox
+				state={toggle}
+        event={lightBoxHandler}
+        data={data}
+        imageWidth="60vw"
+        imageHeight="70vh"
+        thumbnailHeight={50}
+        thumbnailWidth={50}
+        setImageIndex={setSIndex}
+        imageIndex={sIndex}
+			/></>
+      ))} 
+            <ImageSection lightBoxHandler={lightBoxHandler} />
             </div>
+
+            
             <div className="recipe-content">
-             
               <h1 className="recipe-title"><a href="#">Ecommerce Website</a></h1>
               <p className="recipe-metadata">
-                <span className="recipe-rating">★★★★<span>☆</span></span>
-                <span className="recipe-votes">(12 votes)</span>
+                <span className="recipe-rating">★★★★</span><span className='recipe-votes'>12reviews</span>
               </p>
+              <h1 className='recipe-pricetag'>$15000</h1>
+              <button className="recipe-save" type="button">
+               Contact Developer
+              </button>
               <p className="recipe-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio voluptates, 
               explicabo reprehenderit porro error, numquam dolore iusto vero ipsa nisi quae iure inventore incidunt commodi cumque magnam non eligendi delectus quam reiciendis rem harum fuga! 
               Nobis vel sequi nostrum facilis veniam itaque asperiores consequatur totam perspiciatis sapiente ducimus facere molestiae, reiciendis saepe, perferendis voluptate corrupti. Saepe nobis odit 
               aspernatur minus quam esse soluta doloribus.</p>
-              <h3>Highlights</h3>
+              <h2 className='subHeader'>Highlights</h2>
               <ul className='listedItem'>
                 <li>Admin Dashbard</li>
                 <li>Highly Cursomizable</li>
@@ -34,12 +84,9 @@ export default function SingleProduct() {
                 <li>Admin dashboard</li>
                 <li>Highly Cursomizable</li>
               </ul>
-              <button className="recipe-save" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="#000000"><path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z" fill="currentColor" /></svg>
-               Add to Cart
-              </button>
+              
               <div className='detailSection'>
-              <h3>Details</h3>
+              <h2 className='subHeader'>Details</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum hic ratione numquam quos praesentium dolor a consequatur nisi ipsam voluptatem, magnam tempore, aliquid cupiditate 
                 dolorum impedit unde velit omnis suscipit blanditiis? Nemo suscipit qui animi? Neque ipsum consequatur deserunt earum iure inventore nam magni, tenetur vel, necessitatibus veritatis
                  ullam odit aliquam? Repellendus, at! Dolorem libero odio quos tenetur temporibus minus commodi, omnis error?</p>

@@ -1,6 +1,8 @@
 
 
-
+.green{
+  background-color: black;
+}
   .left {
     float: left;
     width: 20%;
@@ -8,7 +10,10 @@
     height:90vh;
   }
   .right {
-    width: 70%;
+    width: 80%;
+    height:90vh;
+    float:right;
+    background-color: green;
   }
   .ContactButton{
     padding: 10px 20px;
@@ -19,6 +24,7 @@
     color: white;
     font-weight: 500;
     font-size: large;
+    border-radius: 5px;
     
   }
   .ContactButton:hover{
@@ -51,11 +57,17 @@
   .left{
     width: 30%;
   }
+  .right{
+    width: 70%;
+  }
 }
 
 @media(max-width:500px){
    .left{
     width: 45%;
+   }
+   .right{
+    width: 55%;
    }
 } 
 /* @media(min-width:800px) and (max-width:1000px){
@@ -63,3 +75,4 @@
     width: 40%;
   }
 } */
+

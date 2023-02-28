@@ -7,6 +7,7 @@ import cat from '../../assets/cat.webp'
 import Posts from '../../components/posts/posts'
 import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 import FaqSection from '../Faqsection/FaqSection';
+import Footer from '../../components/footer/Footer';
 
 export default function ProductListing() {
   return (
@@ -27,10 +28,11 @@ export default function ProductListing() {
  
   <h2  className={styles.productLister}>OUR BEST SELLERS</h2>
 
-  <div>
+  <div >
     <Posts />
   </div>
   </div>
+  <Footer />
      
 
 

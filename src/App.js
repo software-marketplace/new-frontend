@@ -12,6 +12,8 @@ import DeveloperDashbord from './pages/develperDashboard/DeveloperDashbord'
 // import Navbar from './components/Navbar/Navbar';
 import SingleProduct from './pages/productOpen.jsx/SingleProduct';
 import UserDashboard from './pages/userDashboard/userDashboard'
+// import Footer from '../src/components/footer/Footer'
+
 
 export default function App() {
   return (
@@ -27,6 +29,7 @@ export default function App() {
         <Route path="userDashboard" element={ <UserDashboard />} />
       </Route>
     </Routes>
+    {/* <Footer /> */}
     </BrowserRouter>
     </div>
     </>

@@ -11,28 +11,32 @@ export default function post() {
     <>
       {Data.map((product) =>
 
- <Link to ="/product"> 
+<Link to ="/product" className='he'> 
   <div className="product-card" key={product.id}>
   <div className="product-tumb">
     <img src={product.images} alt="" />
   </div>
   <div className="product-details">
     {/* <span className="product-catagory">Women,bag</span> */}
-    <h4><a href="">{product.product_name}</a></h4>
+    <h4>{product.product_name}</h4>
     <p>{product.product_description}</p>
     <div className='stars'>
     {Array(product.rating).fill(<Star /> )}
    </div>
     <div className="product-bottom-details">
       <div className="product-price"><small>$96.00</small>${product.Price}</div>
-      <div className="product-links">
-        <a href=""><FavoriteBorderIcon /></a>
-        <a href=""><AddShoppingCartIcon/></a>
-      </div>
+      {/* <div className="product-links">
+      <span> <FavoriteBorderIcon /></span>
+      <span> <AddShoppingCartIcon/></span>
+      </div> */}
+      
     </div>
+    <button>
+        Add to cart
+      </button>
   </div>
 </div>
-</Link>
+</Link> 
        )}   
     </>
   )

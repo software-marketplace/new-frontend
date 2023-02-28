@@ -7,7 +7,7 @@ export default function LoginSignup({setIsModalOpen}) {
     const [loginOpen,setLoginClose] = useState(true)
 
   return (
-    <div className='blurbackground'>
+    <div className='blurbackground' >
        {loginOpen ? (<Login  setLoginClose={setLoginClose} setIsModalOpen={setIsModalOpen}/>):(<Signup setLoginClose={setLoginClose} setIsModalOpen={setIsModalOpen}/>)}
     </div>
   )
