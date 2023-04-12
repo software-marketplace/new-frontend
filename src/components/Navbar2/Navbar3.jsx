@@ -17,16 +17,16 @@ const Navbar = () => {
   return (
     <>
     <nav className="navbar">
-      <div className="container">
+      <div className="container1 positionabsolute">
      
-         <div className="leftName1">
+         {/* <div className="leftName1">
             DevHustle
-        </div>
+        </div> */}
         <div className="menu-icon" onClick={handleShowNavbar}>
           <MenuIcon />
         </div> 
       
-         <div className={`nav-elements  ${showNavbar && 'active'}`}>  
+         <div className={`nav-elements positionfixer ${showNavbar && 'active'}`}>  
           <ul>
             <li>
              Products

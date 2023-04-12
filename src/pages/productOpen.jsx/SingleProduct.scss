@@ -1,0 +1,203 @@
+body {
+	--primary: green;
+   --grey: #454545;
+	--lightgrey: #666;
+   color: var(--grey);
+}
+
+.recipe,
+.pizza-box {
+	display: flex;
+	gap: 20px;
+}
+.side,.side1{
+	flex-wrap: wrap;
+	border-radius: 4px;
+}
+.productImage{
+	max-height: calc(200px + 4vw);
+}
+.imageHolder{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 30px 10px;
+	justify-content: flex-start;
+	align-items:flex-start;
+	// margin-top: 30px;
+
+}
+.pizza-box {
+	width: calc(200px + 15vw);
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	.img {
+		max-width: 100%;
+		min-height: 100%;
+		width:100%;
+		height: auto;
+		object-fit:cover;
+		object-position: 50% 50%;
+	}
+}
+.pizza-box:hover {
+
+transition:100ms ease-in-out;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+transform: scale(1.002);
+}
+.recipe {
+	overflow: hidden;
+	font-family: 'Inter', sans-serif;
+	&-content {
+		padding: 16px 15px;
+		padding-left: 30px;
+		flex: 4 1 30ch;
+		border-left: 0.6px solid rgb(215, 208, 208);
+	}
+	
+	&-tags {
+		margin: 0 -8px;
+	}
+	&-desc{
+		margin-top: 10px;
+	}
+
+	&-tag {
+		display: inline-block;
+		margin: 8px;
+		font-size: .875em;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: .02em;
+		color: var(--primary);
+	}
+	
+	&-title {
+		margin: 0;
+		font-size: clamp(1.4em, 2.1vw, 2.1em);
+		font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+		
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+	&-pricetag{
+		font-size: xx-large;
+		font-weight: 600;
+	}
+	
+	&-metadata {
+		margin-top:.5em;
+	}
+	
+	&-rating {
+		font-size: 1.5em;
+		letter-spacing: 0.05em;
+		color: #950434;
+		span {
+			color: var(--grey);
+		}
+	}
+	
+	&-votes {
+		font-size: .825em;
+		text-decoration: underline;
+		margin-left: 10px;
+		color: var(--lightgrey);
+	}
+	
+	&-save {
+		display: flex;
+		align-items: center;
+		padding:10px 20px;
+		border-radius: 4px;
+		border: 2px solid currentColor;
+		color: white;
+		letter-spacing: 2px;
+		background-color: green;
+		border: 1px solid green;
+		font-family: 'Inter', sans-serif;
+		cursor: pointer;
+		font-weight:500;
+		margin-top: 10px;
+		
+		&:hover{
+			background-color:white;
+			color: black;
+			transition: 0.2s ease-in-out;
+		}
+		svg {
+			margin-right: 6px;
+		}
+	}
+}
+
+.recipe{
+	&recipe1{
+     padding: 0px;
+	}
+}
+.big {
+	width: clamp(500px, 95%, 100%);
+	font-family: 'Inter', sans-serif;
+}
+.small {
+	width: 20%;
+	padding:10px;
+	position: fixed;
+	border: 1px solid #dbdada;
+	border-radius: 8px;
+	top: 50px;
+	right: 10px;	
+	display: none;
+}
+.subHeader{
+	margin: 20px 0px;
+}
+.yes{
+	display: flex;
+	justify-content: center;
+	// margin:auto 2%;
+	align-items: center;
+}
+.listedItem{
+	color: gray;
+	font-size: medium;
+	line-height: 25px;
+}
+.bigBox{
+	min-height: 600px;
+}
+.detailSection{
+	border-top: 0.6px solid rgb(215, 208, 208);
+	margin-top: 10px;
+}
+@media(max-width:800px){
+	.small{
+		display: none;
+	}
+	.big {
+		width: clamp(500px, 100%, 100%);
+	}
+}
+@media (min-width:300px) and (max-width:700px){
+	.recipe,.pizza-box{
+		flex-wrap: wrap;
+		gap: 0px;
+	}
+}
+@media (min-width:300px) and (max-width:645px){
+	.imageHolder{
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+}
+@media (min-width:500px) and (max-width:1000px){
+	.productImage{
+		min-height: 100px
+	}
+}

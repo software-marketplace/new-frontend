@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function FaqSection() {
+export default function Carousel() {
   return (
     <div>
       

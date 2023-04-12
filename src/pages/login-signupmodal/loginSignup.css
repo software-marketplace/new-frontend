@@ -8,6 +8,7 @@
     height: 100vh;
     width: auto;
     margin-top: -60px;
+    transition: 1s ease-in;
     display: flex;
     justify-content: center;
     align-items: center;
