@@ -1,5 +1,5 @@
 
-                            // this is the route page after onclick of For developer page in Navbar2
+ // this is the route page after onclick of For developer page in Navbar2
 
 import React,{useEffect,Component} from 'react'
 import AddIcon from '@mui/icons-material/Add';
@@ -19,19 +19,20 @@ import {
   setQuickButtons
 } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
+import Navbar from '../../components/Navbar2/Navbar3';
 
 export default function DeveloperDashbord() {
 
   return (
     <>
-    <div className={styles.green} >
+    <div  >
     <div>
-      <Navbar3 />
+      <Navbar />
     </div>
       
-          <div className={styles.left}>
-            <h2 className={styles.LeftSideContent}><span className={styles.a}><FlareIcon /></span>Devhustle</h2>
-            <h4 className={styles.SideContent}>PROJECTS</h4>
+          <div className={[styles.left]}>
+            {/* <h2 className={styles.LeftSideContent}><span className={styles.a}><FlareIcon /></span>Devhustle</h2> */}
+            <h4 className={styles.SideContent}>PROJECT</h4>
             <span className={styles.SideContent}><span > <AddIcon /></span> Upload Projects</span>
             <h4 className={styles.SideContent}>OFFERS</h4>
             <span className={styles.SideContent}><span > <DynamicFormIcon /></span>Create Coupon Code</span>
@@ -41,7 +42,6 @@ export default function DeveloperDashbord() {
          
           </div>
           <div className={styles.right}>
-
           </div>
           
       </div>

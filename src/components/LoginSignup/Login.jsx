@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../pages/login-signupmodal/loginSignup.css'
 import CloseIcon from '@mui/icons-material/Close';
 
-export default function Login({setLoginClose,setIsModalOpen}) {
+export default function Login({setLoginClose,setIsModalOpen, setUser}) {
+  const [username,setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const handleLogin = () => {
+    console.log("In handleLogin");
+    setUser({username});
+  }
   return (
     <div className="wrapper login">
     <div className="container2">
@@ -18,8 +24,8 @@ export default function Login({setLoginClose,setIsModalOpen}) {
         <div className="login-form">
           <h2>Login</h2> 
           <form action>
-            <p> <label>Username/Email address<span>*</span></label> <input type="text" placeholder="Username or Email" required /> </p>
-            <p> <label>Password<span>*</span></label> <input type="password" placeholder="Password" required /> </p>
+            <p> <input type="text" placeholder="Email*" required /> </p>
+            <p> <input type="password" placeholder="Password*" required /> </p>
             <p> <input type="submit" defaultValue="Sign In" /> </p>
             <p> <a href>Forgot password?</a> </p>
           </form>

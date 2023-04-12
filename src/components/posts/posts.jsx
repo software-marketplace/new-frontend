@@ -4,9 +4,11 @@ import Data from "../../devhustle.json";
 import VerticalPost from "../post/VerticalPost";
 
 export default function posts() {
+  const top_posts = Data.slice(7);
+  console.log(top_posts);
   return (
     <div className="cardlisting">
-      {Data.map((product, i) => (
+      {top_posts.map((product, i) => (
         <VerticalPost
           key={i}
           image={product.display_image}

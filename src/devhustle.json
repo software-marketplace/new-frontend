@@ -1,5 +1,3544 @@
-[{
-  "_id": "1",
+[
+  {
+    "_id": 0,
+    "product_name": "Claap 2.0",
+    "product_description": "Too many meetings? We can help with that \ud83d\udc47\n\n\ud83c\udfa5 Replace your next meeting with a short video and get feedback faster\n\n\u2728 Record the meetings you keep with AI notes and transcripts\n\n\ud83d\udcfa Scale your team\u2019s knowledge with a video workspace designed for your org",
+    "images": [
+        "https://ph-files.imgix.net/195f3792-9be8-4580-969b-f3001f528a38.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/40e47c64-1751-4cf4-a702-e72ac83c2ce6.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/d1c239d7-5651-46e5-af1c-51d1fcc415d0.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/04eadc3c-6918-4ff3-a500-21f02071efa8.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/e74ce27a-a74e-402f-93b6-3669369d4978.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/f293a242-6c96-496a-a1e9-02b334b1753f.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/85d008d5-7209-4b7c-8a0e-959e2fca5fda.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/195f3792-9be8-4580-969b-f3001f528a38.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Debra Kolar",
+    "tags": [
+        "Web App",
+        "Productivity",
+        "Meetings"
+    ],
+    "rating": 2,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Stuart Harding",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Annie Long",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 1,
+    "product_name": "AI Studio",
+    "product_description": "Most realistic AI powered photo studio for single person or couple! Stop wasting time in photobooth, you'll get a pack of 100+ AI-generated photos in styles like \ud83d\udc68\u200d\ud83d\udcbcLinkedin Pack, \ud83c\udfd6Gaming Character, \ud83c\udfacMovie Scene, \u2764\ufe0f\u200d\ud83d\udd25 Dating,  and \ud83d\udd79 GTA",
+    "images": [
+        "https://ph-files.imgix.net/f827e77f-1ca8-4fb9-970b-f4655e5020b3.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/f827e77f-1ca8-4fb9-970b-f4655e5020b3.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+    "built_by": "James Walker",
+    "tags": [
+        "Productivity",
+        "Photography",
+        "Artificial Intelligence"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "David Miske",
+            "rating": 2,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Beth Hudnall",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 2,
+    "product_name": "Priorit.io",
+    "product_description": "Priorit.io is a data-driven SaaS tool for next-level leaders. It is a tool to measure, analyze, monitor, and understand critical business data. It helps to assess companies\u2019 potential for sustainable growth with specific guidance to achieve it.",
+    "images": [
+        "https://ph-files.imgix.net/a46a9221-a76e-41a4-b345-6acd7d51272b.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/9c63fdae-f3df-42d0-ad59-d1018552f2d0.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/8f91d95d-8202-471f-8263-6d531f477455.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/c966c02e-8856-4583-b6da-8f7be4865850.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/1fecf89f-2215-4eda-b0ff-a60709307349.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/a46a9221-a76e-41a4-b345-6acd7d51272b.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Thomas Barrick",
+    "tags": [
+        "Productivity",
+        "Artificial Intelligence",
+        "Data"
+    ],
+    "rating": 5,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Estelle Adams",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Seth Kees",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 3,
+    "product_name": "Loopin AI for Google Meet",
+    "product_description": "Loopin records and summarizes the meeting notes so you can focus on the conversation. No more messy notes or missed action items. Share with your team directly via email or Slack. Prepare with automated insights from related meetings and collaborative agendas.",
+    "images": [
+        "https://ph-files.imgix.net/54df0747-e81b-4504-8ab9-795e58277290.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=373&h=210&fit=max",
+        "https://ph-files.imgix.net/a865a1d4-30f2-44a9-8568-3364bd0e4a45.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=351&h=210&fit=max",
+        "https://ph-files.imgix.net/ba691573-e908-4851-9574-fabc2e891dd7.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=351&h=210&fit=max",
+        "https://ph-files.imgix.net/d5d75bb4-e04c-471b-b85c-af8a2de71380.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=351&h=210&fit=max",
+        "https://ph-files.imgix.net/b1411589-85d2-497c-a1fb-47eefc0a4c20.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=351&h=210&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/54df0747-e81b-4504-8ab9-795e58277290.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=373&h=210&fit=max",
+    "built_by": "Michael Fernandez",
+    "tags": [
+        "Chrome Extensions",
+        "Productivity",
+        "Meetings"
+    ],
+    "rating": 2,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Laurie Chafin",
+            "rating": 3,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Earl Ray",
+            "rating": 5,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 4,
+    "product_name": "Figma Export to Video",
+    "product_description": "The only Figma Plugin that lets you export smart animations to GIF or MP4. \n\nCrafted with love, care and attention to fit into your favorite design app like a glove. Share videos with your team, create a slick marketing video or delightful micro-interactions.",
+    "images": [
+        "https://ph-files.imgix.net/f423a1a3-1b06-4176-bf44-a506c1630dcd.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/56ba2f52-46e0-4aee-9a32-b15009518e2b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/f423a1a3-1b06-4176-bf44-a506c1630dcd.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+    "built_by": "Elisa Hager",
+    "tags": [
+        "Design Tools",
+        "GIFs",
+        "Prototyping"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "David Price",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Vera Liner",
+            "rating": 5,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 5,
+    "product_name": "Faradai Sustain",
+    "product_description": "Faradai Sustain is an AI and cloud-based SaaS data analytics solution for enterprises. The data science-centric Faradai Sustain helps customers on their net-zero journey with emission tracking, reporting and more! Achieve your sustainability goals with us!",
+    "images": [
+        "https://ph-files.imgix.net/ddfa5a53-3114-4739-98fe-82173d294943.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/165e9dfd-7525-422d-a564-770033884866.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/db2ad570-3521-4c4d-9a78-ad21660be1c3.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/7dea328d-8579-44a7-b284-4502016d0198.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/af420df3-4365-4326-8fda-a59cbe9eebcb.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/ddfa5a53-3114-4739-98fe-82173d294943.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Roberta Chisholm",
+    "tags": [
+        "Internet of Things",
+        "SaaS",
+        "Climate Tech"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Janet Yarboro",
+            "rating": 3,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Patricia Penney",
+            "rating": 4,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 6,
+    "product_name": "ChatGPT for Google Sheets",
+    "product_description": "Make your work easier write human-level insights for any report by using ChatGPT and Google Sheets. Using Two Minute Reports you can get data from external sources and generate recommendations, insights, actions to take based on the latest data",
+    "images": [
+        "https://ph-files.imgix.net/a2e400cc-7579-4cc4-afa3-5adb45c68a83.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/d2b884fc-0f29-4710-825e-48416ad247df.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/a2e400cc-7579-4cc4-afa3-5adb45c68a83.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Bessie Vanbrunt",
+    "tags": [
+        "Spreadsheets",
+        "Marketing",
+        "Artificial Intelligence"
+    ],
+    "rating": 5,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Antonio Willoughby",
+            "rating": 2,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Patricia Hillman",
+            "rating": 2,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 7,
+    "product_name": "Building Your Twitter Tribe",
+    "product_description": "The Honest Guide for Entrepreneurs & content creators to grow on Twitter. \n\nIncludes everything that worked & that didn't work for me as a solopreneur building a SaaS product & creating content on Twitter.\n\nLifetime access \u2705\nNew Updates \u2705",
+    "images": [
+        "https://ph-files.imgix.net/9c715b73-6699-4bcc-bb88-529a4bd6aaeb.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/f76dba7b-f53a-4635-afd7-f80c7a41334b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/74e80e7f-909e-42e9-9578-1784d4bc372d.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/9c715b73-6699-4bcc-bb88-529a4bd6aaeb.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+    "built_by": "John Schamp",
+    "tags": [
+        "Twitter",
+        "Social Network",
+        "Marketing"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Antonio Cook",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Margie Lawson",
+            "rating": 5,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Payment Required",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 8,
+    "product_name": "AhoyConnect",
+    "product_description": "AhoyConnect helps you answer what matters in your community. With pre-built templates, easily track user behavior, analyze sentiment, keywords & identify engagement drivers.\n\n\nSpend more time building your community the right way, and let Ahoy handle the rest.",
+    "images": [
+        "https://ph-files.imgix.net/e9e6d5c3-3fef-4853-a42e-f5107ecc8109.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/ccac82db-94df-4871-8b07-6c34fa61f8cc.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/ddcb0f67-6706-41af-8fad-320f078139d1.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/51d1dd43-7cb8-4843-a78d-f26a6b76a799.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/1ef91d29-059f-4764-b4cc-263518a33d7b.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/8cd6f806-0f3c-4704-a374-e5239958e903.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/9f52dd6a-5e33-4282-b745-c90842d4fc09.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/e3f28566-e172-4386-af00-0fc843a9e857.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/e9e6d5c3-3fef-4853-a42e-f5107ecc8109.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+    "built_by": "John Hunt",
+    "tags": [
+        "Web3",
+        "Data &amp; Analytics",
+        "Community"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Shauna Sutch",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Maurice Garstka",
+            "rating": 5,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 9,
+    "product_name": "ChitChat",
+    "product_description": "In the coming years, we will likely have more bot friends than human friends. ChitChat delves into how we find, create, and engage with these digital companions. You can even transform your PDFs into bots and engage in conversations with them.",
+    "images": [
+        "https://ph-files.imgix.net/3f05bf6f-d525-4f6b-8a09-820181d66616.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/ed7b3881-e459-43dd-a1a9-3a6a89db6c2d.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/4eed1668-82ec-4d65-b867-25991b52cec8.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/a0086877-b627-420d-b719-e784d9876159.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/cf22fc4e-b0ea-4dfe-b216-07f0c5793e20.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/bf369fa9-3b61-43c1-b884-c56fae7a9611.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/3f05bf6f-d525-4f6b-8a09-820181d66616.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Angela Phipps",
+    "tags": [
+        "Productivity",
+        "Artificial Intelligence",
+        "Bots"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Hyacinth Paul",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Darrell Bush",
+            "rating": 4,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 10,
+    "product_name": "Tetrisly Lite",
+    "product_description": "Free version of Tetrisly Design System, a carefully crafted UI library with design tokens in its DNA, coming along with the free Figma plugin to manage them. A react library is coming soon to create the all-in-one product design ecosystem.",
+    "images": [
+        "https://ph-files.imgix.net/72809974-4273-4282-8499-16785af2983c.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/0a777b52-c290-468f-bc44-9a2eae2fee16.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/918f1256-297f-4033-8794-635615948f07.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/c26a9748-441f-488e-ad62-21801610857f.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/d08c162d-52e1-4a2d-a2a5-7f6601c07018.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/aafcbc37-fce1-4190-8479-89991d581830.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/b18b8dc8-0456-4fe2-97ef-c8cba85bb99b.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/72809974-4273-4282-8499-16785af2983c.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Frances Nichols",
+    "tags": [
+        "Design Tools",
+        "Productivity",
+        "UX Design"
+    ],
+    "rating": 5,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Howard Shelnutt",
+            "rating": 2,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Claude Reliford",
+            "rating": 5,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 11,
+    "product_name": "EnsoView",
+    "product_description": "EnsoView supercharges your PDFs with lead capture popups, banners, chat, and conversion pixels, all integrated directly into your content. Boost your PDF marketing effectiveness by up to 37% with EnsoView.",
+    "images": [
+        "https://ph-files.imgix.net/270b3686-93cb-4384-81ca-e174c918d3e7.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/270b3686-93cb-4384-81ca-e174c918d3e7.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Marie Salas",
+    "tags": [
+        "Analytics",
+        "Marketing",
+        "Marketing attribution"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Norbert Jones",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Sally Ludwig",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 12,
+    "product_name": "Pod",
+    "product_description": "Pod is the ultimate AI workspace for sellers! Pod recommends sales plays, summarizes relevant knowledge about your deals, generates personalized emails, and automates data entry. Manage your pipeline more easily than ever before. Close more deals, faster!",
+    "images": [
+        "https://ph-files.imgix.net/2fe23c14-a480-4506-82a9-6d2bdf6dfcf3.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/cfa79ad3-6beb-4c80-8e2d-56ae4a81c307.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/68a185ac-a3fb-4cec-ac74-ce382356da0a.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/4e68d406-50cc-407e-bd3f-ba28bed213df.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/06832f13-72ee-46ef-bbb4-c0efbf5ce7b3.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/2af767fc-38af-4c45-8ab3-e4c5f327b3e4.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/9b99bcc6-7369-4514-9761-84604a198af4.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/2fe23c14-a480-4506-82a9-6d2bdf6dfcf3.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Beverly Mini",
+    "tags": [
+        "Productivity",
+        "Sales",
+        "Artificial Intelligence"
+    ],
+    "rating": 5,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Amy Brown",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Scott Rosales",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 13,
+    "product_name": "TranslateWith.AI",
+    "product_description": "TranslateWith.ai is a drop-in, AI-powered translation widget for your website, SaaS, blog, or e-commerce store. Fast, accurate translations in 40+ languages.",
+    "images": [
+        "https://ph-files.imgix.net/f323bc0b-31f3-461c-9365-018fa933c796.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/f323bc0b-31f3-461c-9365-018fa933c796.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Alice Owen",
+    "tags": [
+        "Languages",
+        "SaaS",
+        "Developer Tools"
+    ],
+    "rating": 1,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Donald Ring",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Patricia Perry",
+            "rating": 5,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 14,
+    "product_name": "AI Code Mentor",
+    "product_description": "\ud83d\udc68\u200d\ud83c\udfeb AI Code Mentor is a code explainer tool that uses artificial intelligence (AI) to generate complete and comprehensive explanations for code sections, providing a personalized and engaging learning experience.",
+    "images": [
+        "https://ph-files.imgix.net/3b542303-dd36-4294-9c6f-5ca56190e0c3.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/aec927f5-997d-4a38-a582-d0eaf6b8b145.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/50cf5af5-f7cb-498a-a37f-87d868829dd7.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/3b542303-dd36-4294-9c6f-5ca56190e0c3.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Laverne Gonzalez",
+    "tags": [
+        "Education",
+        "Developer Tools",
+        "Artificial Intelligence"
+    ],
+    "rating": 1,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Mary Ailes",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Joe Andersen",
+            "rating": 4,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 15,
+    "product_name": "Handbook for Marketplaces",
+    "product_description": "Handbook for Marketplaces - is a handpicked collection of invaluable articles, videos, essays, podcasts for marketplace founders. It includes legendary articles from investment funds like a16z, VerisonOne, NFX and other famous sources all in one place.",
+    "images": [
+        "https://ph-files.imgix.net/92f0ff75-9ad0-4a36-914d-c498460cd733.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=367&h=220&fit=max",
+        "https://ph-files.imgix.net/fcf08fa5-ee0e-4142-aad7-e69c922781d4.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/0e345067-654d-4ab8-8938-335d69c8dad9.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/17d0e48d-17cc-4960-a635-06eed816978f.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/309a55d7-7934-404d-baff-ba4b1e6d026b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/92f0ff75-9ad0-4a36-914d-c498460cd733.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=367&h=220&fit=max",
+    "built_by": "Gary Toy",
+    "tags": [
+        "Startup Books",
+        "E-Commerce",
+        "Business Books"
+    ],
+    "rating": 5,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "John Lawson",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Paul Kincade",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 16,
+    "product_name": "Product Head",
+    "product_description": "Join +258 readers and receive our short-form bi-weekly newsletter about what matters in product building.",
+    "images": [
+        "https://ph-files.imgix.net/9d265b48-e46f-4e73-99c9-3f50c8e682f6.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/b85e7ea2-0e1a-4bcf-84df-6bbbd64ebcd4.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/9d265b48-e46f-4e73-99c9-3f50c8e682f6.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+    "built_by": "Sharon Brown",
+    "tags": [
+        "Design Tools",
+        "Newsletters",
+        "Maker Tools"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Esther White",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Lisa Edwards",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 17,
+    "product_name": "UpMeet 3.0",
+    "product_description": "Transform your meetings with UpMeet - Automatic meeting summaries, AI, boards and quick actions. Streamline the process, save time, and ensure productive meetings. Add Custom branding makes each meeting unique. Say goodbye to dull meetings with UpMeet.",
+    "images": [
+        "https://ph-files.imgix.net/bcfa8898-54d8-4c23-8bc9-c012fd747a8b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=421&h=220&fit=max",
+        "https://ph-files.imgix.net/f90465dd-8aa6-48bd-9fa9-c628a56cf952.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=404&h=220&fit=max",
+        "https://ph-files.imgix.net/180a49f4-f7c7-49f5-9e4c-4cadc454ac21.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=404&h=220&fit=max",
+        "https://ph-files.imgix.net/5a79ed48-603e-428e-be37-c30b9211902c.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=386&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/bcfa8898-54d8-4c23-8bc9-c012fd747a8b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=421&h=220&fit=max",
+    "built_by": "James Rooney",
+    "tags": [
+        "Productivity",
+        "User Experience",
+        "Meetings"
+    ],
+    "rating": 1,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Sarah Bolstad",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "John Neal",
+            "rating": 2,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 18,
+    "product_name": "MeetPal",
+    "product_description": "MeetPal is a desktop app meetings assistant that identifies participants' info, allowing users to see each person's company, role, and LinkedIn profile.",
+    "images": [
+        "https://ph-files.imgix.net/b8611ffc-f929-4903-8f81-fb5b9a44e618.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/ccd5533b-9fd6-4961-b3b3-1b57bec74cd0.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=352&h=220&fit=max",
+        "https://ph-files.imgix.net/8464630c-feae-4c5f-975a-2f2ef0896d78.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=162&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/b8611ffc-f929-4903-8f81-fb5b9a44e618.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Gilbert Swafford",
+    "tags": [
+        "Productivity",
+        "Meetings",
+        "Calendar"
+    ],
+    "rating": 1,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Danny Behrens",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Mary Zarate",
+            "rating": 4,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 19,
+    "product_name": "Experience Matters",
+    "product_description": "Get practical tips to optimize your product selection, offer excellent customer service, manage remote teams & stay ahead of customer experience trends in this guide. Boost your business starting today!",
+    "images": [
+        "https://ph-files.imgix.net/ceb653af-2e35-4727-87ec-39c1079a6a54.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/3d94a1e5-4b69-4529-a65f-d5fbdefc2daa.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/488a7e8a-0c21-4708-9511-fb3d7b2c020b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/bc25693e-a258-4fa7-b2b9-e05a18738375.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/ceb653af-2e35-4727-87ec-39c1079a6a54.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+    "built_by": "Alice Gallegos",
+    "tags": [
+        "Customer Success",
+        "Customer Communication"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Marcella Black",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Erik Smalls",
+            "rating": 2,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 20,
+    "product_name": "NocoAI",
+    "product_description": "NocoAI simplifies building, managing, and deploying GPT apps and models. Generate APIs, define templates and fine tune models with a Single UI with no coding needed. The only backend you'll need to get your GPT app up and running.",
+    "images": [
+        "https://ph-files.imgix.net/fa59b6e2-3109-4363-82cc-f1d7f99bdf4c.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=394&h=220&fit=max",
+        "https://ph-files.imgix.net/162f5b1f-5463-427e-b319-459176f41473.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=303&h=220&fit=max",
+        "https://ph-files.imgix.net/f73c6079-8260-4bd7-a2e9-68b66c5aa752.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=392&h=220&fit=max",
+        "https://ph-files.imgix.net/22f6f655-fcc1-4c19-a7dc-744db4f5dd94.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/8af0c8c0-f684-47ca-98b1-49da49482b38.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=387&h=220&fit=max",
+        "https://ph-files.imgix.net/dc8873b5-819d-48a1-97ef-66c99dc1cdcd.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=398&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/fa59b6e2-3109-4363-82cc-f1d7f99bdf4c.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=394&h=220&fit=max",
+    "built_by": "Ariel Wheeler",
+    "tags": [
+        "Artificial Intelligence",
+        "No-Code"
+    ],
+    "rating": 5,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Kim Lewis",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Myron Mcgraw",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 21,
+    "product_name": "Brainlox AI",
+    "product_description": "Brainlox.AI: an innovative ed-tech platform designed to break down the barriers of learning to code. Embrace the journey and discover a limitless future in coding, without fear holding you back.",
+    "images": [
+        "https://ph-files.imgix.net/91be2580-9443-4d63-bd12-1db0def24da6.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/ee36ccb9-e045-464a-a3f2-602ecd510890.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/8ef36982-124a-4caa-bd4f-42a9a090ffaf.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=262&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/91be2580-9443-4d63-bd12-1db0def24da6.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+    "built_by": "Wendell Heyne",
+    "tags": [
+        "Education",
+        "Online Learning"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Miguel Persaud",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Keisha Davidson",
+            "rating": 2,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 22,
+    "product_name": "Znote",
+    "product_description": "Znote is the perfect sandbox for prototyping .\nBreak the codes with your Markdown and Javascript notes\nto explore your ideas with incredible productivity. \ud83d\ude80\ufe0f\nAnd now, you could forget the production step and deploy directly from your markdown \ud83e\udd2f",
+    "images": [
+        "https://ph-files.imgix.net/a6833b9e-ffb1-4814-9715-bc48e6481ace.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/24155b8d-199b-4b76-9a75-55f7a6a37d9f.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=419&h=220&fit=max",
+        "https://ph-files.imgix.net/73c3baea-eb92-4566-b9db-504d38926cc1.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=419&h=220&fit=max",
+        "https://ph-files.imgix.net/e84a6663-d869-449a-a27c-c82ecd0529e6.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=419&h=220&fit=max",
+        "https://ph-files.imgix.net/80d0e8da-74b1-4e4f-b505-c37e265d2152.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=419&h=220&fit=max",
+        "https://ph-files.imgix.net/5f3bc30c-dc0c-493f-888e-d6505307bcbf.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=419&h=220&fit=max",
+        "https://ph-files.imgix.net/4dd928fc-ce43-4cbf-8126-655a81562b72.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=419&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/a6833b9e-ffb1-4814-9715-bc48e6481ace.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Maggie Knapp",
+    "tags": [
+        "Prototyping",
+        "Developer Tools",
+        "Artificial Intelligence"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Louisa Jenkins",
+            "rating": 3,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Richard Murach",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 23,
+    "product_name": "Bedrock Base",
+    "product_description": "Organize all of your apps, files, links, and more in Bedrock Base. It's like Mac Finder but built for the Internet Age.",
+    "images": [
+        "https://ph-files.imgix.net/8e7064ec-7058-44eb-8d78-f2ac12337efd.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/458b7eea-fc00-483d-91a0-0513d0fb1147.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/8e7064ec-7058-44eb-8d78-f2ac12337efd.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+    "built_by": "John Clark",
+    "tags": [
+        "Productivity",
+        "Computers"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Steve Garst",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Louise Miller",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 24,
+    "product_name": "ShopMate AI",
+    "product_description": "Meet ShopMate AI: Enhance your e-commerce store using our ChatGPT virtual assistant. Boost sales, upsell/cross-sell, enjoy 24/7 support, reduce costs, and optimize conversions. Upgrade your store with ShopMate AI today!",
+    "images": [
+        "https://ph-files.imgix.net/225ae1cd-1d27-4214-9047-b4956760de15.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=408&h=220&fit=max",
+        "https://ph-files.imgix.net/770906cf-efe4-4ce5-9c34-ce4ab9979106.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/321fb351-a27a-4e6b-9fbe-cad8bc09ee2b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/b6fa2273-d51c-482e-a619-a0b9d1e920ef.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/225ae1cd-1d27-4214-9047-b4956760de15.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=408&h=220&fit=max",
+    "built_by": "Flossie Shaw",
+    "tags": [
+        "Artificial Intelligence",
+        "E-Commerce",
+        "Tech"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Kendra Boyd",
+            "rating": 3,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Mark Foster",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 25,
+    "product_name": "1000+ ChatGPT Prompts",
+    "product_description": "\ud83d\uded1\ud83d\udcbb\ud83d\udcc8 Stop wasting 5 hours every week! Upgrade your marketing game with ChatGPT Prompts today. Our expert-written prompts will transform your work and skyrocket your productivity! Claim your pack now and see the difference in your work! \ud83d\udcaa\ud83c\udffc\ud83d\ude80",
+    "images": [
+        "https://ph-files.imgix.net/19f92b6f-f66d-4343-9ecb-663520f5748a.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/644755b7-9547-4505-83e7-06fe6107d547.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/4e291b2f-b848-4628-9b89-9f14f27551bb.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/19f92b6f-f66d-4343-9ecb-663520f5748a.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+    "built_by": "Karen Sanders",
+    "tags": [
+        "Productivity",
+        "Marketing"
+    ],
+    "rating": 1,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Barbara Frawley",
+            "rating": 2,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Leslie Washington",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Payment Required",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 26,
+    "product_name": "otrillo",
+    "product_description": "Automatically and asynchronously generate beautiful written and video case studies. Simply list the questions you want to ask clients, choose a reward you want to give, send them a link, and you'll have an endless flow of written and video case studies.",
+    "images": [
+        "https://ph-files.imgix.net/1443cb27-1681-4d41-bf06-5ba01eb963d0.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/c406e8bc-8e7d-4ebd-b1ef-c6b49bcf0cd8.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=420&h=220&fit=max",
+        "https://ph-files.imgix.net/b76e44ed-1bda-40b6-a37d-47d84a6c57de.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=398&h=220&fit=max",
+        "https://ph-files.imgix.net/4f4e2118-a277-490c-ba83-51066eae56f2.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=400&h=220&fit=max",
+        "https://ph-files.imgix.net/fbb3f1c2-6953-465c-a009-ee5ee91c8b6c.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=424&h=220&fit=max",
+        "https://ph-files.imgix.net/1d03d0a3-df60-48ed-9fa4-24dc2db3585b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=425&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/1443cb27-1681-4d41-bf06-5ba01eb963d0.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Ester Ogg",
+    "tags": [
+        "Sales",
+        "Marketing",
+        "SaaS"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Deborah Garcia",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Ellen Clark",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 27,
+    "product_name": "These Abs Do Not Exist",
+    "product_description": "AI-powered app that generates pictures of your favorite celebrities with rock solid abs.",
+    "images": [
+        "https://ph-files.imgix.net/2630285a-db94-4305-94e5-0c166025b6f9.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=155&h=220&fit=max",
+        "https://ph-files.imgix.net/a2599d35-3c34-4f4f-9662-9a705c9ee40c.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/8499698a-da3d-44ad-bd24-9f274143c1f1.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/b1f0d1ba-f2e4-4070-b691-aa34a68e356d.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/e1b4924c-920c-4e12-bff8-bb862319db03.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/2630285a-db94-4305-94e5-0c166025b6f9.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=155&h=220&fit=max",
+    "built_by": "Cora Joyce",
+    "tags": [
+        "Internet of Things",
+        "Artificial Intelligence",
+        "Tech"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Danielle Horner",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Debra Kirkpatrick",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 28,
+    "product_name": "Openlead",
+    "product_description": "AI-powered lead generation unlocking your ideal clients. Get custom, targeted lead lists from our vast database, tailored to your needs. Maximize ROI & boost sales effortlessly!",
+    "images": [
+        "https://ph-files.imgix.net/2ee887e5-c6ce-4a7d-883a-ec8e8ad31e67.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=393&h=220&fit=max",
+        "https://ph-files.imgix.net/c0522883-7543-498a-8489-526fbd2cc957.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=343&h=220&fit=max",
+        "https://ph-files.imgix.net/a854d3a0-aaac-4542-9e23-e366afb373d5.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=472&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/2ee887e5-c6ce-4a7d-883a-ec8e8ad31e67.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=393&h=220&fit=max",
+    "built_by": "Dale Volz",
+    "tags": [
+        "Productivity",
+        "Sales",
+        "Artificial Intelligence"
+    ],
+    "rating": 1,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Mary Gallegos",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Annie Stubblefield",
+            "rating": 2,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+    
+},
+{
+    "_id": 29,
+    "product_name": "Learnium",
+    "product_description": "Learn smarter with our AI-powered app using spaced-repetition! Access on Android, iOS, and Chrome extension. Create quizzes, summary blocks, and get adaptive notifications for book learning. Revolutionize your study routine!",
+    "images": [
+        "https://ph-files.imgix.net/9b00ce9f-5051-4530-afb5-7a40263ec7dc.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/8e9c9e2b-d06e-4533-b1ab-dddc4574d04c.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=328&h=220&fit=max",
+        "https://ph-files.imgix.net/6d9fe34b-9db7-4e6a-a3ae-87dd0261c2ff.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=124&h=220&fit=max",
+        "https://ph-files.imgix.net/e48c1e7c-c6b6-43ae-b001-131796f6f8cf.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=124&h=220&fit=max",
+        "https://ph-files.imgix.net/0c5a45a5-b20a-4101-bef7-bdfbe7ae410c.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=124&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/9b00ce9f-5051-4530-afb5-7a40263ec7dc.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Melanie Nichols",
+    "tags": [
+        "Productivity",
+        "Education",
+        "Books"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Gary Packard",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Deon Keys",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 30,
+    "product_name": "Yoked",
+    "product_description": "Look RIPPED w/o hitting the gym! \ud83c\udfcb\ufe0f Upload pics, AI makes you shredded! \ud83d\udcaa Perfect for laughs & flexing on social media. \ud83d\ude02 Get Hulk-like in a snap!",
+    "images": [
+        "https://ph-files.imgix.net/0a0fd86f-b588-4316-9d58-e638a6c1096a.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/6c97bb7b-92d9-46e4-b81d-0a80615c9327.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/81bbc239-8d59-4f87-969c-34202059829e.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/a26467fc-4fc0-4688-a534-454f76cf01e3.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+        "https://ph-files.imgix.net/18ec9252-0458-4f40-bcfb-8b2ea0835388.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/0a0fd86f-b588-4316-9d58-e638a6c1096a.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max",
+    "built_by": "Frances Rudy",
+    "tags": [
+        "Design Tools",
+        "Social Media",
+        "Photography"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Douglas Swift",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Tracy Damour",
+            "rating": 5,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Payment Required",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 31,
+    "product_name": "PokeFit",
+    "product_description": "PokeFit is a service that allows you to search for Pok\u00e9mon that are the same height and weight as you\u2728",
+    "images": [
+        "https://ph-files.imgix.net/78b7ef1c-c08f-4c1e-9877-1e11a5ae502f.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=419&h=220&fit=max",
+        "https://ph-files.imgix.net/a44be8f2-d007-427a-ba9d-0a168c610fec.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=419&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/78b7ef1c-c08f-4c1e-9877-1e11a5ae502f.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=419&h=220&fit=max",
+    "built_by": "William Marshall",
+    "tags": [
+        "Pokemon"
+    ],
+    "rating": 1,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Susan Craven",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Miles Hernandez",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 32,
+    "product_name": "Charge",
+    "product_description": "With Charge, you can create the perfect pricing model, track product usage, manage subscriptions, and add promotions effortlessly. Say goodbye to the hassle of pricing and subscription management while increasing customer satisfaction.",
+    "images": [
+        "https://ph-files.imgix.net/1ee81b2b-0e15-4b4e-8719-b48f83c2046c.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/b81149d7-9697-4f3a-9d14-baf951a00e5b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/5260815a-e55a-49ec-b508-de55bca351d9.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/4252a001-5d1c-43f7-9477-7d72eb1b269b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/022887ae-d826-44d4-ae73-1f47c4e68fc9.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/f24dd747-148a-4359-b4df-e51ac7102c39.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/1ee81b2b-0e15-4b4e-8719-b48f83c2046c.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Samantha Ganley",
+    "tags": [
+        "API",
+        "SaaS",
+        "Developer Tools"
+    ],
+    "rating": 5,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Linda Kenny",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Karl Davidson",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 33,
+    "product_name": "ChatSite by Databerry.ai",
+    "product_description": "ChatSite is a ChatGPT Bot trained on your company data that integrates with your existing customer support tool, starting with Crisp.chat",
+    "images": [
+        "https://ph-files.imgix.net/cce6ba97-c9b2-4ede-ad07-621902075d01.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/f91051de-3e19-44f1-94f4-08bd7ab12400.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/cce6ba97-c9b2-4ede-ad07-621902075d01.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Andrew Hendrickson",
+    "tags": [
+        "Customer Communication",
+        "Artificial Intelligence",
+        "Bots"
+    ],
+    "rating": 2,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Jason Pederson",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Lucretia Poirier",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 34,
+    "product_name": "Nutshell Summaries",
+    "product_description": "Introducing AI video summaries that allow you to summarise YouTube videos of any length and into any language! Get a summary of lectures, live events, news, etc.",
+    "images": [
+        "https://ph-files.imgix.net/3fbdb92c-720c-4f9b-a0da-bcd5beb912a8.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=361&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/3fbdb92c-720c-4f9b-a0da-bcd5beb912a8.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=361&h=220&fit=max",
+    "built_by": "Ismael Limon",
+    "tags": [
+        "Education",
+        "Online Learning",
+        "Video"
+    ],
+    "rating": 1,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Pamela King",
+            "rating": 2,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Lisa Morgan",
+            "rating": 2,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 35,
+    "product_name": "ChatGPT For Gmail",
+    "product_description": "A Forever Free Chrome extension that doesn't require Open AI account or Signups to get going.\nWithin Gmail you can, \n- Generate subject lines.\n- Generate email from subject lines.\n- Write emails with prompts\n- Spam and Readability scores\nand many more..",
+    "images": [
+        "https://ph-files.imgix.net/d2215167-4de5-49eb-b00a-280c3057e75b.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/946c21e9-b5fd-4c90-8a78-4ff1a442f320.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/726006a6-02c6-4a21-915e-39d21bb9d3ac.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/43445e03-f8ed-481a-a4ec-b058da0054f4.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/924ac792-eb59-45c5-852e-e6f3aaea5283.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/d3b2c1df-2b3d-420b-b3e2-c9004d2dce4a.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/d2215167-4de5-49eb-b00a-280c3057e75b.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Diane Gutierrez",
+    "tags": [
+        "Chrome Extensions",
+        "Email",
+        "Artificial Intelligence"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Jan Mcqueen",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Raymond Geier",
+            "rating": 4,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 36,
+    "product_name": "TypeGPT",
+    "product_description": "\ud83d\udc49 TypeGPT, is a browser extension that puts Chatgpt in any text box on the internet. \n\ud83d\udc49 You can change models to suit your use case - like coding, sql, translation\n\ud83d\udd11  BYOK - Bring your own keys\n\ud83d\udcb2  At less than 10% cost of alternatives\n\ud83d\udcbe 28KB only",
+    "images": [
+        "https://ph-files.imgix.net/58aed39e-a1d8-4da0-9074-f89f1eff2bd3.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/579c9b15-734f-449e-8fac-be960d75c6ec.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=220&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/58aed39e-a1d8-4da0-9074-f89f1eff2bd3.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Johanna Speroni",
+    "tags": [
+        "Chrome Extensions",
+        "Artificial Intelligence",
+        "Bots"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Elizabeth Rodriguez",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Irene Hudspeth",
+            "rating": 4,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Payment Required",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 37,
+    "product_name": "Spoiler Bot",
+    "product_description": "Spoiler Bot is the perfect app for NHL fans who want to watch only the games where their team wins. Spoiler Bot makes it easy for those who DVR/record games to spend their time wisely by only watching their favorite teams win!",
+    "images": [
+        "https://ph-files.imgix.net/38f9742a-3112-4085-837d-fa99bf6185ad.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=103&h=220&fit=max",
+        "https://ph-files.imgix.net/9710ff53-9b11-4465-a5d3-223b87e91dc9.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=142&h=220&fit=max",
+        "https://ph-files.imgix.net/6fc9ba35-7112-40e1-b03a-1f252394f71b.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=108&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/38f9742a-3112-4085-837d-fa99bf6185ad.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=103&h=220&fit=max",
+    "built_by": "Dale Wong",
+    "tags": [
+        "Productivity",
+        "Sports"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Roy Britt",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Michael Slaybaugh",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 38,
+    "product_name": "Delineate",
+    "product_description": "Delineate enables you to easily create predictive models and data products. With just a few clicks, you can forecast sales, predict churn, build customer-facing predictive calculators and more. Perfect for founders, revenue ops teams, and product managers.",
+    "images": [
+        "https://ph-files.imgix.net/f5d2778f-b017-41a5-9263-d79a0d5bbba3.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=373&h=220&fit=max",
+        "https://ph-files.imgix.net/3e18b1e5-909c-45e0-9959-75a19997dcd9.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=318&h=220&fit=max",
+        "https://ph-files.imgix.net/d26218ac-aaa8-43fc-9353-98d6c7743fec.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=589&h=220&fit=max",
+        "https://ph-files.imgix.net/c5f2b1f6-9cfd-451c-a2f1-b57fdd77f2af.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=557&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/f5d2778f-b017-41a5-9263-d79a0d5bbba3.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=373&h=220&fit=max",
+    "built_by": "Celeste Wills",
+    "tags": [
+        "SaaS",
+        "Artificial Intelligence",
+        "Data"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Donald Dowlin",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "John Baldwin",
+            "rating": 2,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Payment Required",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 39,
+    "product_name": "missedtitles",
+    "product_description": "missedtitles helps you to find blog titles that'll beat the ones of your competition.\n\nThrow in the URL from your competitor and receive results right away.",
+    "images": [
+        "https://ph-files.imgix.net/0ab59e80-9dd0-4814-83b4-161ebef83143.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=293&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/0ab59e80-9dd0-4814-83b4-161ebef83143.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=293&h=220&fit=max",
+    "built_by": "Patrica Austin",
+    "tags": [
+        "Marketing",
+        "Growth Hacking",
+        "SEO"
+    ],
+    "rating": 5,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Christian Sandate",
+            "rating": 2,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Melvin Garber",
+            "rating": 5,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 40,
+    "product_name": "QuestionBox",
+    "product_description": "QuestionBox is a simple widget that adds AI search and chat to your website. QuestionBox can be trained on your website docs, FAQs, privacy terms... actually, you can train it on whatever you want!",
+    "images": [
+        "https://ph-files.imgix.net/7828631a-2bde-4d3d-9103-5b2b39c815f6.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/7828631a-2bde-4d3d-9103-5b2b39c815f6.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Lois Thompson",
+    "tags": [
+        "User Experience",
+        "Customer Communication",
+        "Artificial Intelligence"
+    ],
+    "rating": 1,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Shameka Clay",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "David Coffey",
+            "rating": 2,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Payment Required",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 41,
+    "product_name": "QuickPenAI",
+    "product_description": "Create unique, high-quality content with QuickPenAI\u2019s 60+ templates. Plagiarism-free and optimized for search rankings and Amazon product descriptions.",
+    "images": [
+        "https://ph-files.imgix.net/8ea73cbf-680a-45a7-aff9-856d4895d9b6.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=387&h=220&fit=max",
+        "https://ph-files.imgix.net/593af1b8-f80d-486d-b341-338d63bcb891.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=458&h=220&fit=max",
+        "https://ph-files.imgix.net/7f9716b6-d4a7-43fe-b7cb-db647bfeefae.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=427&h=220&fit=max",
+        "https://ph-files.imgix.net/34464ac2-f956-4d3d-ad03-2fdf10ac02f4.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=426&h=220&fit=max",
+        "https://ph-files.imgix.net/8c33e3be-13b6-4503-b459-39c35bfa1baa.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=427&h=220&fit=max",
+        "https://ph-files.imgix.net/304b489d-06e2-48f4-b854-4999665da950.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=427&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/8ea73cbf-680a-45a7-aff9-856d4895d9b6.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=387&h=220&fit=max",
+    "built_by": "Margaret Ray",
+    "tags": [
+        "Writing",
+        "Artificial Intelligence"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Kristine Abuaita",
+            "rating": 3,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Arron Robison",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 42,
+    "product_name": "d8in.bio",
+    "product_description": "Paste your dating profile into your bio. People are burnt out from dating apps and are using IG and TikTok to connect. But dating info is often missing. d8in.bio lets you easily add your campus, age, sign, sexual orientation, relationship status & more.",
+    "images": [
+        "https://ph-files.imgix.net/3b0049f5-abdc-4e18-913a-e84fe2b00c5c.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/2bf6d616-30ad-4e78-8449-c53597512d1e.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/bde1ccd3-b102-4d12-a297-d71c5c34a376.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/2fe49722-c1b0-4fb8-af15-0594bde7bc48.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/3b0049f5-abdc-4e18-913a-e84fe2b00c5c.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+    "built_by": "Deborah Seldon",
+    "tags": [
+        "Dating",
+        "Social Media"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Tiffany Mcleod",
+            "rating": 2,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Sheila Boros",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 43,
+    "product_name": "Theraview",
+    "product_description": "Meet Theraview, the best app for tracking ADHD meds. Easily track doses, set reminders, and anticipate side effects. Keep a record of your dose history and optimize your schedule. An optional parent mode is available for tracking your child's medication.",
+    "images": [
+        "https://ph-files.imgix.net/66fb82fa-d358-4c38-91ec-29e32fb1922c.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=165&h=220&fit=max",
+        "https://ph-files.imgix.net/f6c968b7-6cef-4829-bc7d-8dab9decc6fc.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=165&h=220&fit=max",
+        "https://ph-files.imgix.net/e546c75c-0d72-4cbb-9a88-082ddc713c5a.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=165&h=220&fit=max",
+        "https://ph-files.imgix.net/97ad01b9-b953-4889-9169-8c28b03686cc.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=165&h=220&fit=max",
+        "https://ph-files.imgix.net/2f410aa2-051e-4e76-8ff3-14b53762149d.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=165&h=220&fit=max",
+        "https://ph-files.imgix.net/dab585a4-2a55-4870-b3fe-072039f8fa25.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=165&h=220&fit=max",
+        "https://ph-files.imgix.net/2f23aed3-13d7-4297-b662-0b398846a7b0.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=165&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/66fb82fa-d358-4c38-91ec-29e32fb1922c.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=165&h=220&fit=max",
+    "built_by": "Chad Porterfield",
+    "tags": [
+        "Productivity",
+        "Quantified Self",
+        "Health"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "David Still",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Milton Carter",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 44,
+    "product_name": "Iggy Address Insights",
+    "product_description": "Iggy Address Insights: enter an address and get a comprehensive, customizable report on the demographics, transit, amenities, and more within walking and driving distance. Ditch the google maps guesswork, data sourcing, and geospatial analysis.",
+    "images": [
+        "https://ph-files.imgix.net/58024c82-6a2f-4149-aabd-b2ce5d8f2cfe.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/c6ae03ff-743f-47a0-a73f-e8748b2b7198.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=324&h=220&fit=max",
+        "https://ph-files.imgix.net/4a007488-82f7-4bf7-b29b-b56613792fd1.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=324&h=220&fit=max",
+        "https://ph-files.imgix.net/8b34656e-1b00-456d-85f4-1e75716c1b8e.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=324&h=220&fit=max",
+        "https://ph-files.imgix.net/c0740da9-83a6-470f-8681-fa79e6fd60bb.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=324&h=220&fit=max",
+        "https://ph-files.imgix.net/588127d2-9c69-4bd0-b377-2ec56bc12d2a.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=324&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/58024c82-6a2f-4149-aabd-b2ce5d8f2cfe.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Patricia Smith",
+    "tags": [
+        "Investing",
+        "Maps",
+        "Data &amp; Analytics"
+    ],
+    "rating": 4,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Brad Mosteller",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Ernest Smith",
+            "rating": 1,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 45,
+    "product_name": "WYHR",
+    "product_description": "So many freelancers and creators are confused about their minimum rate and they may be working for very less than what they actually deserve. So I have created a simple calculator to calculate your minimum hourly rate.",
+    "images": [
+        "https://ph-files.imgix.net/a76b1a58-40ee-4983-8b45-bc4ffcca4249.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=324&h=220&fit=max",
+        "https://ph-files.imgix.net/8b865a73-6c62-4256-86eb-bb3afba99eb2.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=215&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/a76b1a58-40ee-4983-8b45-bc4ffcca4249.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=324&h=220&fit=max",
+    "built_by": "Stephan Decker",
+    "tags": [
+        "Freelance",
+        "Payments",
+        "Remote Work"
+    ],
+    "rating": 2,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Thomas Hernandez",
+            "rating": 4,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Charles Dejesus",
+            "rating": 5,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 46,
+    "product_name": "Pneumatic Workflow",
+    "product_description": "\ud83d\udd27 Workflow AI: AI-driven task sequences from process descriptions, white-labeled for your brand! Improve team collaboration, productivity, and project management. Add your logo, personalize the tool, and deliver a top-notch experience to your customers! \ud83c\udfaf",
+    "images": [
+        "https://ph-files.imgix.net/2b074be0-2ede-4649-8f30-c0c635ce8591.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/d7218d54-f19c-4be3-b997-54d6bc5ff7f3.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/bcb7ac0b-d9f7-4846-ab2a-2e1d7687b6e8.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max",
+        "https://ph-files.imgix.net/dfd7863a-4782-43bc-9760-78b42b024c65.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=368&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/2b074be0-2ede-4649-8f30-c0c635ce8591.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Ida Braden",
+    "tags": [
+        "Android",
+        "Task Management",
+        "Artificial Intelligence"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Angela Mcdermott",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Paul Hershberger",
+            "rating": 3,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free Options",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 47,
+    "product_name": "Saverd",
+    "product_description": "Saverd is an online recipe box built to make gathering and sharing your recipes a breeze. Access your recipes from anywhere. Follow family and friends. Choose how and what you share. Use the clipper to grab recipes from the web or enter your own.",
+    "images": [
+        "https://ph-files.imgix.net/1ba814ed-dbfe-4034-9e89-671e894e607a.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=330&h=220&fit=max",
+        "https://ph-files.imgix.net/635171a9-a0f3-4180-aa71-d2cdacdfe8d6.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=330&h=220&fit=max",
+        "https://ph-files.imgix.net/1361d5db-f700-4dba-aad3-7fd36e1d4d04.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=101&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/1ba814ed-dbfe-4034-9e89-671e894e607a.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=330&h=220&fit=max",
+    "built_by": "Teressa Clark",
+    "tags": [
+        "Productivity",
+        "Cooking",
+        "Food &amp; Drink"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Sheila Johnson",
+            "rating": 2,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "John Bailey",
+            "rating": 5,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare": 
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 48,
+    "product_name": "Chat with Genghis Khan",
+    "product_description": "AI Genghis Khan needs no introduction :)",
+    "images": [
+        "https://ph-files.imgix.net/7692c3c1-d36c-4618-bcab-35766e8073eb.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=601&h=220&fit=max",
+        "https://ph-files.imgix.net/eb4f8fcd-220d-4956-b3a2-424185409925.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=420&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/7692c3c1-d36c-4618-bcab-35766e8073eb.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=601&h=220&fit=max",
+    "built_by": "Roy Wilson",
+    "tags": [
+        "Artificial Intelligence",
+        "Bots"
+    ],
+    "rating": 2,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Linda Starrett",
+            "rating": 5,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Grant Blasen",
+            "rating": 2,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 49,
+    "product_name": "Diversset",
+    "product_description": "Diversset helps investors find great stocks and ETFs tailored to investors' risk appetite and constructs an efficient investment portfolio. Minimizing portfolio's expected loss and volatility, given investors' required return.",
+    "images": [
+        "https://ph-files.imgix.net/abac82db-b12a-4290-9c1f-ced38354732b.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/9af9739f-4e9e-4172-9448-bb7bb7a3e1b9.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=507&h=220&fit=max",
+        "https://ph-files.imgix.net/6c6bd2b9-35de-43e0-9e6d-791575c3cf09.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=501&h=220&fit=max",
+        "https://ph-files.imgix.net/687ed7f3-77be-44fa-90eb-8741e7ee24d7.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=505&h=220&fit=max",
+        "https://ph-files.imgix.net/1898af63-95c1-4a19-a3e3-499b85858e2d.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=426&h=220&fit=max",
+        "https://ph-files.imgix.net/56f7c3c1-3df6-4554-a7a5-ccb3003a4254.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=420&h=220&fit=max",
+        "https://ph-files.imgix.net/da1d73e2-6d1b-4875-85df-c657ff6c9fc9.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=500&h=220&fit=max",
+        "https://ph-files.imgix.net/bfb97c03-4be6-4692-b28b-0eb834b74948.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=504&h=220&fit=max",
+        "https://ph-files.imgix.net/181a9083-bdbe-4cd2-b21d-2bf7c0ba84fa.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=420&h=220&fit=max",
+        "https://ph-files.imgix.net/3a58f769-1f16-4ed8-8a77-a756c4560103.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=439&h=220&fit=max",
+        "https://ph-files.imgix.net/2fd2426c-9837-4cd5-8c9a-c7184633f998.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=441&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/abac82db-b12a-4290-9c1f-ced38354732b.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Michael Decker",
+    "tags": [
+        "Fintech",
+        "Investing",
+        "Data &amp; Analytics"
+    ],
+    "rating": 1,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "Fran Soukup",
+            "rating": 3,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Daniel Stevenson",
+            "rating": 4,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+{
+    "_id": 50,
+    "product_name": "MITA app",
+    "product_description": "MITA is the ultimate play-to-earn web3 app for social gaming lifestyle. With MITA, you can explore, go live and socialise, play interesting games, connect, chat, share moments, game battles with friends, get rewarded with diamonds or crypto tokens and repeat.",
+    "images": [
+        "https://ph-files.imgix.net/c198510a-d10b-48e3-9029-1bab4b403547.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+        "https://ph-files.imgix.net/380cb315-bfab-47cd-b7e1-63a1fda72b8e.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=349&h=220&fit=max",
+        "https://ph-files.imgix.net/504dbd61-f2f3-4975-91ee-eebaa2088f8a.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=123&h=220&fit=max",
+        "https://ph-files.imgix.net/537aad4f-f5bf-4ca3-aa97-2c40a8048b9e.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=128&h=220&fit=max",
+        "https://ph-files.imgix.net/7e4d351e-f7dc-4fdc-b2ae-c553522f476d.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=349&h=220&fit=max",
+        "https://ph-files.imgix.net/77562587-9d08-4358-ba3f-0a5dd37b5f7e.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=349&h=220&fit=max",
+        "https://ph-files.imgix.net/d4c88184-4fdf-41e2-8b24-3c7aa26c434c.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=349&h=220&fit=max"
+    ],
+    "display_image": "https://ph-files.imgix.net/c198510a-d10b-48e3-9029-1bab4b403547.jpeg?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=391&h=220&fit=max",
+    "built_by": "Sarah Joseph",
+    "tags": [
+        "Social Media",
+        "Games",
+        "Web3"
+    ],
+    "rating": 3,
+    "reviews": [
+        {
+            "id": 1,
+            "user": "James Davison",
+            "rating": 1,
+            "comment": "This is a review"
+        },
+        {
+            "id": 2,
+            "user": "Ike Yates",
+            "rating": 4,
+            "comment": "This is a review"
+        }
+    ],
+    "Price": "Free",
+    "compare":
+        {
+            "frontend": [
+                "React.js",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js"
+            ],
+            "cloud_providers": [
+                "aws"
+            ],
+            "cloud_Services": [
+                "S3",
+                "Cognito",
+                "CloudFront"
+            ],
+            "type": "Web application",
+            "admin": "No",
+            "tracking_dashboards": "No",
+            "navigation_dahboards": "Yes",
+            "is_cloud_data_store": "Yes",
+            "databases": [
+                "Mongodb"
+            ],
+            "architecture": [
+                "MVC"
+            ],
+            "license": [
+                "Single Use"
+            ],
+            "maintainance_lifetime": "Yes",
+            "maintainence_in_months": "NA"
+        }
+},
+  {
+  "_id": "51",
   "product_name": "Learning Management System",
   "product_description": "A learning management system is a software application for the administration.",
   "images": ["https://content.cws.net/hubfs/MEWS/Blog/meded-blog-lms.png"],
@@ -37,7 +3576,7 @@
   }]
 },
 {
-  "_id": "2",
+  "_id": "52",
   "product_name": "Ecommerce application",
   "product_description": "Ecommerce is buying and selling that is conducted in an online environment, through an ecommerce website. An application is a software program designed to accomplish one or more tasks in a particular software environment. An ecommerce application is a software application that is specifically designed to support the creation of an ecommerce website or add functionality to it.",
   "images": ["https://www.avsolutions.in/images/services/eCommerce-website.jpg","https://cdn.dribbble.com/users/4189231/screenshots/14398650/media/5372618cabab7d6af68a438cad8c5398.png?compress=1&resize=400x300"],
@@ -75,7 +3614,7 @@
   }]
 },
 {
-    "_id": "3",
+    "_id": "53",
     "product_name": "MERN Ecommerce App",
     "product_description": "This is an ecommerce application built using the MERN stack, which includes MongoDB, Express, React, and Node.js. The application provides users with the ability to browse and purchase products online.",
     "images": ["https://i.imgur.com/2bVHHVy.jpg","https://i.imgur.com/tRYiC9G.jpg"],
@@ -113,7 +3652,7 @@
     }]
   },
 {
-    "_id": "4",
+    "_id": "54",
     "product_name": "Ionic-Angular Ecommerce App",
     "product_description": "This is an ecommerce application built using the Ionic-Angular stack, which includes Ionic and Angular. The application provides users with the ability to browse and purchase products on their mobile devices.",
     "images": ["https://i.imgur.com/G8aBJKz.jpg","https://i.imgur.com/diRg8tw.jpg"],
@@ -149,4 +3688,5 @@
       "rating": "4",
       "comment": "Easy to use, great interface."
     }]
-  }]
+  }
+]
