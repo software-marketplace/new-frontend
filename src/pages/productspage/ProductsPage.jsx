@@ -1,17 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar2 from "../../components/Navbar/Navbar";
 import styles from "./productspage.module.css";
 import HorizontalPost from "../../components/post/HorizontalPost";
 import Data from "../../devhustle.json";
 
 const ProductsPage = () => {
+  const [data, setData] = useState(Data);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const search = () => {
+    setData(
+      Data.filter(
+        (product) =>
+          product.product_name
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase()) ||
+          product.tags
+            .join(" ")
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase())
+      )
+    );
+  };
+
   return (
-    <>
+    <div className={styles.container}>
       <Navbar2 />
+      <div className={styles.search}>
+        <input
+          placeholder="Search ..."
+          type="text"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+        <button onClick={search}>Search</button>
+      </div>
       <div className={styles.mainContainer}>
         <div className={styles.sidebar}>Sidebar</div>
         <div className={styles.main}>
-          {Data.map((product, i) => (
+          {data.map((product, i) => (
             <HorizontalPost
               key={i}
               image={product.display_image}
@@ -28,7 +55,7 @@ const ProductsPage = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
