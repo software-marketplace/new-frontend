@@ -4,8 +4,9 @@
 
 .mainContainer {
   display: flex;
-  max-width: 1500px;
   margin: 0 auto;
+  max-width: 1500px;
+  padding: 3rem;
   padding-top: 3rem;
 }
 
@@ -22,6 +23,7 @@
 
 .search {
   max-width: 1500px;
+  padding: 0 3rem;
   margin: auto;
   display: flex;
 }
