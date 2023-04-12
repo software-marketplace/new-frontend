@@ -11,7 +11,7 @@ import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import user from '../../assets/user.png'
 import BottomModal from '../../components/smallModal/Modal';
 import Navbar from '../../components/Navbar/Navbar'
-import ChatWidget from '../../components/chat/ChatWidget';
+// import ChatWidget from '../../components/chat/ChatWidget';
 
 export default function DeveloperDashbord() {
   return (
@@ -31,7 +31,7 @@ export default function DeveloperDashbord() {
             <span className={styles.SideContent}><button className={styles.ContactButton}>Chat with customer</button></span>
         
           <div className={styles.right}>
-            <ChatWidget username={"def"} devUsername={"priyanka@gmail.com"} />
+            {/* <ChatWidget username={"def"} devUsername={"priyanka@gmail.com"} /> */}
           {/* <BottomModal /> */}
           </div>
           </div>

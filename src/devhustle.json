@@ -1,22 +1,152 @@
 [{
-    "id": "1",
+    "_id": "1",
     "product_name": "Learning Management System",
     "product_description": "A learning management system is a software application for the administration, documentation, tracking, reporting, automation, and delivery of educational courses, training programs, materials or learning and development programs. The learning management system concept emerged directly from e-Learning.",
     "images": ["https://content.cws.net/hubfs/MEWS/Blog/meded-blog-lms.png"],
     "display_image":"https://content.cws.net/hubfs/MEWS/Blog/meded-blog-lms.png",
     "built_by": "Priyanka",
-    "rating":4,
-    "Price":"500",
-    "tags": ["LMS"],
+    "rating":4.5,
+    "Price":"50000",
+    "tags": ["LMS","Web application","course play","video stream"],
+    "compare":{
+      "frontend":["React.js","Next.js"],
+      "backend":["Node.js","Express.js"],
+      "cloud_providers":["aws"],
+      "cloud_Services":["S3","Cognito","CloudFront"],
+      "type":"Web application",
+      "admin":"No",
+      "tracking_dashboards":"No",
+      "navigation_dahboards":"Yes",
+      "is_cloud_data_store":"Yes",
+      "databases":["Mongodb"],
+      "architecture":["MVC"],
+      "license":["Single Use"],
+      "maintainance_lifetime":"Yes",
+      "maintainence_in_months":"NA"
+    },
     "reviews":[{
       "id": "1",
       "user": "Amisha",
       "rating": "4",
       "comment": "Immense features!"
     },{
-      "id": "1",
+      "id": "2",
       "user": "Meeta",
       "rating": "5",
       "comment": "Excellent product"
     }]
-  }]
+  },
+{
+    "_id": "2",
+    "product_name": "Ecommerce application",
+    "product_description": "Ecommerce is buying and selling that is conducted in an online environment, through an ecommerce website. An application is a software program designed to accomplish one or more tasks in a particular software environment. An ecommerce application is a software application that is specifically designed to support the creation of an ecommerce website or add functionality to it.",
+    "images": ["https://www.avsolutions.in/images/services/eCommerce-website.jpg","https://cdn.dribbble.com/users/4189231/screenshots/14398650/media/5372618cabab7d6af68a438cad8c5398.png?compress=1&resize=400x300"],
+    "display_image":"https://www.avsolutions.in/images/services/eCommerce-website.jpg",
+    "built_by": "Mansi",
+    "rating":3.5,
+    "Price":20000,
+    "tags": ["Shopping","Ecommerce application","buy products","Mobile Appliaction"],
+    "compare":{
+      "frontend":["Java","Android"],
+      "backend":["Java","Android"],
+      "cloud_providers":["aws"],
+      "cloud_Services":["S3","CloudFront"],
+      "type":"Mobile application",
+      "admin":"No",
+      "tracking_dashboards":"No",
+      "navigation_dahboards":"Yes",
+      "is_cloud_data_store":"Yes",
+      "databases":["Firebase"],
+      "architecture":["MVC"],
+      "license":["Single Use"],
+      "maintainance_lifetime":"No",
+      "maintainence_in_months":"12"
+    },
+    "reviews":[{
+      "id": "1",
+      "user": "Amisha",
+      "rating": "4",
+      "comment": "Immense features!"
+    },{
+      "id": "2",
+      "user": "Meeta",
+      "rating": "3",
+      "comment": "Expected more"
+    }]
+  },
+{
+      "_id": "3",
+      "product_name": "MERN Ecommerce App",
+      "product_description": "This is an ecommerce application built using the MERN stack, which includes MongoDB, Express, React, and Node.js. The application provides users with the ability to browse and purchase products online.",
+      "images": ["https://i.imgur.com/2bVHHVy.jpg","https://i.imgur.com/tRYiC9G.jpg"],
+      "display_image":"https://i.imgur.com/2bVHHVy.jpg",
+      "built_by": "John",
+      "rating":4.2,
+      "Price":35000,
+      "tags": ["Shopping","Ecommerce application","buy products","Web Application"],
+      "compare":{
+        "frontend":["React"],
+        "backend":["Node.js"],
+        "cloud_providers":["aws"],
+        "cloud_Services":["S3","CloudFront"],
+        "type":"Web application",
+        "admin":"Yes",
+        "tracking_dashboards":"Yes",
+        "navigation_dahboards":"Yes",
+        "is_cloud_data_store":"Yes",
+        "databases":["MongoDB"],
+        "architecture":["MVC"],
+        "license":["Multiple Use"],
+        "maintainance_lifetime":"Yes",
+        "maintainence_in_months":"24"
+      },
+      "reviews":[{
+        "id": "1",
+        "user": "Mary",
+        "rating": "5",
+        "comment": "Awesome app with great features!"
+      },{
+        "id": "2",
+        "user": "Bob",
+        "rating": "3",
+        "comment": "Good, but can be better."
+      }]
+    },
+  {
+      "_id": "4",
+      "product_name": "Ionic-Angular Ecommerce App",
+      "product_description": "This is an ecommerce application built using the Ionic-Angular stack, which includes Ionic and Angular. The application provides users with the ability to browse and purchase products on their mobile devices.",
+      "images": ["https://i.imgur.com/G8aBJKz.jpg","https://i.imgur.com/diRg8tw.jpg"],
+      "display_image":"https://i.imgur.com/G8aBJKz.jpg",
+      "built_by": "Samantha",
+      "rating":3.8,
+      "Price":25000,
+      "tags": ["Shopping","Ecommerce application","buy products","Mobile Application"],
+      "compare":{
+        "frontend":["Ionic","Angular"],
+        "backend":["Node.js"],
+        "cloud_providers":["Google Cloud"],
+        "cloud_Services":["Firebase"],
+        "type":"Mobile application",
+        "admin":"No",
+        "tracking_dashboards":"No",
+        "navigation_dahboards":"Yes",
+        "is_cloud_data_store":"Yes",
+        "databases":["Firebase"],
+        "architecture":["MVVM"],
+        "license":["Single Use"],
+        "maintainance_lifetime":"No",
+        "maintainence_in_months":"12"
+      },
+      "reviews":[{
+        "id": "1",
+        "user": "Mark",
+        "rating": "4",
+        "comment": "Good app, could use some improvements."
+      },{
+        "id": "2",
+        "user": "Lisa",
+        "rating": "4",
+        "comment": "Easy to use, great interface."
+      }]
+    }]

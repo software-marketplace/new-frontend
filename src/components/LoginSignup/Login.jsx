@@ -10,19 +10,6 @@ export default function Login({setLoginClose,setIsModalOpen, setUser}) {
     setUser({username});
   }
   return (
-<<<<<<< HEAD
-    <form onSubmit={(event)=> event.preventDefault()}>
-    <div className='Container'>
-        <div className='contentContainer'> 
-      <span className='headerSection'>Login/</span><span onClick={() => setLoginClose(false)} className='shiftSection'>SignUp</span>
-      <CloseIcon className='closeIcon' onClick={() =>setIsModalOpen(false)} />
-      <div className='inputSection'>
-          <input placeholder='Username' className='input' onChange={(event) => setUsername(event.target.value)}></input>
-          <input placeholder='Password' type="password" className='input' onChange={(event) => setPassword(event.target.value)}></input>
-      </div>
-      <div className='bottomSection'>
-        <button type='submit' onSubmit={handleLogin}>LOGIN</button><br/>
-=======
     <div className="wrapper login">
     <div className="container2">
       <div className="col-left">
@@ -31,7 +18,6 @@ export default function Login({setLoginClose,setIsModalOpen, setUser}) {
           <p>Create your account.<br />For Free!</p> <a href className="btn" onClick={() => setLoginClose(false)}>Sign Up</a>
           
         </div>
->>>>>>> 10d4814fcd03a43ebdb9c726757b5b5656b9355f
       </div>
       <CloseIcon className='closeIcon'  onClick={() =>setIsModalOpen(false)}  />
       <div className="col-right">
@@ -46,10 +32,6 @@ export default function Login({setLoginClose,setIsModalOpen, setUser}) {
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-    </form>
-=======
   </div>
->>>>>>> 10d4814fcd03a43ebdb9c726757b5b5656b9355f
   )
 }
