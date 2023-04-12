@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import Navbar2 from "../../components/Navbar/Navbar";
 import styles from "./productspage.module.css";
 import HorizontalPost from "../../components/post/HorizontalPost";
+import PaginatedItems from "../../components/paginate/Paginate";
 import Data from "../../devhustle.json";
 
 const ProductsPage = () => {
@@ -12,6 +13,8 @@ const ProductsPage = () => {
   const [rating, setRating] = useState(0);
   const fromPrice = useRef();
   const toPrice = useRef();
+
+  // paginate
 
   const search = () => {
     setData(
@@ -169,21 +172,7 @@ const ProductsPage = () => {
           </div>
         </div>
         <div className={styles.main}>
-          {finalData.map((product, i) => (
-            <HorizontalPost
-              key={i}
-              image={product.display_image}
-              name={product.product_name}
-              description={product.product_description}
-              builtBy={product.built_by}
-              price={product.Price}
-              rating={product.rating}
-              techStack={[
-                ...product.compare.frontend,
-                ...product.compare.backend,
-              ]}
-            />
-          ))}
+          <PaginatedItems items={finalData} itemsPerPage={7} />
         </div>
       </div>
     </div>
