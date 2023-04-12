@@ -24,8 +24,8 @@ export default function Login({setLoginClose,setIsModalOpen, setUser}) {
         <div className="login-form">
           <h2>Login</h2> 
           <form action>
-            <p> <label>Username/Email address<span>*</span></label> <input type="text" placeholder="Username or Email" required /> </p>
-            <p> <label>Password<span>*</span></label> <input type="password" placeholder="Password" required /> </p>
+            <p> <input type="text" placeholder="Email*" required /> </p>
+            <p> <input type="password" placeholder="Password*" required /> </p>
             <p> <input type="submit" defaultValue="Sign In" /> </p>
             <p> <a href>Forgot password?</a> </p>
           </form>

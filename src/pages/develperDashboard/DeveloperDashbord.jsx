@@ -19,6 +19,7 @@ import {
   setQuickButtons
 } from "react-chat-widget";
 import "react-chat-widget/lib/styles.css";
+import Navbar from '../../components/Navbar2/Navbar3';
 
 export default function DeveloperDashbord() {
 
@@ -26,11 +27,11 @@ export default function DeveloperDashbord() {
     <>
     <div  >
     <div>
-      <Navbar3 />
+      <Navbar />
     </div>
       
-          <div className={[styles.left,styles.green]}>
-            <h2 className={styles.LeftSideContent}><span className={styles.a}><FlareIcon /></span>Devhustle</h2>
+          <div className={[styles.left]}>
+            {/* <h2 className={styles.LeftSideContent}><span className={styles.a}><FlareIcon /></span>Devhustle</h2> */}
             <h4 className={styles.SideContent}>PROJECTS</h4>
             <span className={styles.SideContent}><span > <AddIcon /></span> Upload Projects</span>
             <h4 className={styles.SideContent}>OFFERS</h4>

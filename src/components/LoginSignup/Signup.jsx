@@ -24,10 +24,10 @@ export default function Signup({setLoginClose,setIsModalOpen, setUser}) {
         <div className="login-form">
           <h2>SignUp</h2> 
           <form action>
-          <p> <label>Name<span>*</span></label> <input type="text" placeholder="Username" required /> </p>
-          <p> <label>Email address<span>*</span></label> <input type="text" placeholder="Email Address" required /> </p>
-          <p> <label>Password<span>*</span></label> <input type="password" placeholder="Password" required /> </p>
-          <p> <label>Phone Number<span>*</span></label> <input type="Number" placeholder="91+........." required /> </p>
+          <p> <input type="text" placeholder="Name*" required /> </p>
+          <p> <input type="text" placeholder="Email Address*" required /> </p>
+          <p> <input type="password" placeholder="Password*" required /> </p>
+          <p> <input type="tel" placeholder="Mobile Number*" required /> </p>
          
             <p> <input type="submit" defaultValue="Sign In" /> </p>
             
