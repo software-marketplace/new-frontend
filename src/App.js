@@ -10,6 +10,7 @@ import SingleProduct from "./pages/productOpen.jsx/SingleProduct";
 import UserDashboard from "./pages/userDashboard/userDashboard";
 import Footer from "../src/components/footer/Footer";
 import ProductsPage from "./pages/productspage/ProductsPage";
+import Faq from "./pages/faq";
 
 export default function App() {
   return (
@@ -22,8 +23,9 @@ export default function App() {
               <Route index element={<ProductListing />} />
               <Route path="developer" element={<DeveloperDashbord />} />
               <Route path="products" element={<ProductsPage />} />
-              <Route path="product" element={<SingleProduct />} />
+              <Route path="product/:slug" element={<SingleProduct />} />
               <Route path="userDashboard" element={<UserDashboard />} />
+              <Route path="faq" element={<Faq />} />
             </Route>
           </Routes>
           <Footer />

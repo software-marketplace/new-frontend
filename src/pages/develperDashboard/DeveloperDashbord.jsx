@@ -39,7 +39,7 @@ export default function DeveloperDashbord() {
             <span className={styles.SideContent}> <span > <ListAltIcon /></span>View Existing Coupon</span>
             <span className={styles.SideContent}><button className={styles.ContactButton}>Chat with customer</button></span>
         
-         
+         {/*         {openChat && <ChatWidget devUsername={"priyanka@gmail.com"} username={"developer"} />} */}
           </div>
           <div className={styles.right}>
           </div>

@@ -1,26 +1,28 @@
 import React from "react";
-import styles from "./verticalPost.module.css";
+import styles from "./horizontalPost.module.css";
 import { Link } from "react-router-dom";
 
-const VerticalPost = ({
-  _id,
-  image,
-  name,
-  description,
-  builtBy,
-  techStack,
-  price,
+const Review = ({
+  id,
+  user,
   rating,
+  review,
 }) => {
   return (
     <div className={styles.post}>
-      <img src={image} alt="" />
+      <img src={"avatar.png"} alt="" />
       <div className={styles.content}>
-        <Link to={"/product/"+_id}><h2>{name}</h2></Link>
-        <span className={styles.builtBy}>by {builtBy}</span>
+        <h2>{user}</h2>
+        {/* <span className={styles.builtBy}>by {builtBy}</span> */}
+        {/* <h3>Tech Stack</h3> */}
+        {/* <p>
+          {techStack.map((tech, i) => (
+            <span key={i}>{tech}</span>
+          ))}
+        </p> */}
       </div>
-      <div className={styles.right}>
-        <h3 className={styles.price}>&#x20B9;{price}</h3>
+      {/* <div className={styles.right}>
+        <h3 className={styles.price}>&#x20B9;{price}</h3> */}
         <div className={styles.rating}>
           {[...Array(Math.ceil(rating))].map((_, i) => (
             <svg
@@ -36,15 +38,10 @@ const VerticalPost = ({
           ))}
           ({rating})
         </div>
-        <Link>
-          <button className={styles.btn}>Contact Developer</button>
-        </Link>
-        {/* <span className={styles.btnSec}>
-          <Link>Add to compare</Link>
-        </span> */}
-      </div>
+        <p>{review}</p>
+      {/* </div> */}
     </div>
   );
 };
 
-export default VerticalPost;
+export default Review;

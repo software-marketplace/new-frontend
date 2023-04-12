@@ -5,19 +5,35 @@ import Navbar2 from "../../components/Navbar/Navbar";
 import ModalImage from "react-modal-image";
 
 import ImageSection from "../../components/misleneous/imagesDisplay";
+import ChatWidget from "../../components/chat/ChatWidget";
 
 import { LightBox } from "react-lightbox-pack"; // <--- Importing LightBox Pack
 import "react-lightbox-pack/dist/index.css";
-import data from "./data/data.json";
+import { useParams } from "react-router-dom";
+import data from "../../devhustle.json";
+import { useEffect } from "react";
+import Review from "../../components/post/Review";
 
 export default function SingleProduct() {
+  let params = useParams();
+  console.log("params=",params.slug);
+  console.log("data = ",data[Number(params.slug)]);
+  // const [product, setProduct] = useState({});
   const [isOpen, setIsOpen] = useState(false);
   const [imgIndex, setImgIndex] = useState(0);
   // const [imgIndex, setImgIndex] = useState(0);
-
+  const [openChat, setOpenChat] = useState(false);
+  
   const [toggle, setToggle] = useState(false);
   const [sIndex, setSIndex] = useState(0);
-
+  const product = data[Number(params.slug)];
+  console.log("product = ",product);
+  useEffect(()=>{
+    // const slug = params.slug;
+    // console.log("id = ",slug);
+    // setProduct(data[slug]);
+  },[]);
+  
   // Handler
   const lightBoxHandler = (state, sIndex) => {
     setToggle(state);
@@ -31,11 +47,11 @@ export default function SingleProduct() {
         <div className="big">
           <article className="recipe bigBox">
             <div className="imageHolder">
-              {data.map((item, index) => (
+              {product.images.slice(0,2).map((item, index) => (
                 <>
                   <div className="pizza-box productImage" key={item.id}>
                     <img
-                      src={item.image}
+                      src={item}
                       className="img"
                       onClick={() => {
                         lightBoxHandler(true, index);
@@ -61,26 +77,18 @@ export default function SingleProduct() {
 
             <div className="recipe-content">
               <h1 className="recipe-title">
-                <a href="#">Ecommerce Website</a>
+                <a href="#">{product.product_name}</a>
               </h1>
               <p className="recipe-metadata">
                 <span className="recipe-rating">★★★★</span>
-                <span className="recipe-votes">12reviews</span>
+                <span className="recipe-votes">{product.reviews.length}</span>
               </p>
-              <h1 className="recipe-pricetag">$15000</h1>
-              <button className="recipe-save" type="button">
+              <h1 className="recipe-pricetag">{"Rs."+product.Price}</h1>
+              <button className="recipe-save" type="button" onClick={()=>{setOpenChat(true);}}>
                 Contact Developer
               </button>
               <p className="recipe-desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Distinctio voluptates, explicabo reprehenderit porro error,
-                numquam dolore iusto vero ipsa nisi quae iure inventore incidunt
-                commodi cumque magnam non eligendi delectus quam reiciendis rem
-                harum fuga! Nobis vel sequi nostrum facilis veniam itaque
-                asperiores consequatur totam perspiciatis sapiente ducimus
-                facere molestiae, reiciendis saepe, perferendis voluptate
-                corrupti. Saepe nobis odit aspernatur minus quam esse soluta
-                doloribus.
+                {product.description}
               </p>
               <h2 className="subHeader">Highlights</h2>
               <ul className="listedItem">
@@ -105,17 +113,20 @@ export default function SingleProduct() {
                   odio quos tenetur temporibus minus commodi, omnis error?
                 </p>
               </div>
+              <div>
+                {product.reviews.map((item,index)=>
+                  <Review rating = {item.rating} review={item.review} id={item.id} user = {item.user}/>
+                  // <Review item={item}/>
+                )}
+                {/* {product.reviews} */}
+              </div>
             </div>
           </article>
         </div>
         <div className="small">
           <article className=" side">
             <div className="pizza-box side1">
-              <img
-                src={cat}
-                // width={130} height={120}
-                alt=""
-              />
+              
             </div>
             <div className="recipe-content1">
               <p className="recipe-tags">
@@ -138,6 +149,7 @@ export default function SingleProduct() {
             </div>
           </article>
         </div>
+        {openChat && <ChatWidget username={"priyanka@gmail.com"} devUsername={"developer"} />}
       </div>
     </>
   );

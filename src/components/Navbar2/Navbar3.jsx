@@ -29,10 +29,11 @@ const Navbar = () => {
          <div className={`nav-elements positionfixer ${showNavbar && 'active'}`}>  
           <ul>
             <li>
-             Products
+             <Link to="/products">Products</Link> 
             </li>
             <li>
-              FAQ
+            <Link to="/faq">FAQ</Link> 
+
             </li >
             <li className='Login' onClick={() => setIsModalOpen(true)}>
               Login
