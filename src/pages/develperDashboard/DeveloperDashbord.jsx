@@ -24,12 +24,12 @@ export default function DeveloperDashbord() {
 
   return (
     <>
-    <div className={styles.green} >
+    <div  >
     <div>
       <Navbar3 />
     </div>
       
-          <div className={styles.left}>
+          <div className={[styles.left,styles.green]}>
             <h2 className={styles.LeftSideContent}><span className={styles.a}><FlareIcon /></span>Devhustle</h2>
             <h4 className={styles.SideContent}>PROJECTS</h4>
             <span className={styles.SideContent}><span > <AddIcon /></span> Upload Projects</span>
