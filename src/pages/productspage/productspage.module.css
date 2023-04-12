@@ -1,0 +1,17 @@
+.mainContainer {
+  display: flex;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.sidebar {
+  width: 300px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}

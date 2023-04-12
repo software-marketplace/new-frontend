@@ -1,24 +1,27 @@
-import React from 'react'
-import Post from '../post/Post'
-import './posts.css'
-import data from '../../devhustle.json'
+import React from "react";
+import "./posts.css";
+import Data from "../../devhustle.json";
+import VerticalPost from "../post/VerticalPost";
 
 export default function posts() {
   return (
-    <div className='cardlisting'>
-     
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+    <div className="cardlisting">
+      {Data.map((product, i) => (
+        <VerticalPost
+          key={i}
+          image={product.display_image}
+          name={product.product_name}
+          description={product.product_description}
+          builtBy={product.built_by}
+          price={product.Price}
+          rating={product.rating}
+          techStack={[
+            ...product.compare.frontend,
+            ...product.compare.backend,
+            ...(product.cloud_providers ? product.cloud_providers : []),
+          ]}
+        />
+      ))}
     </div>
-  )
+  );
 }
