@@ -32,7 +32,7 @@ export default function DeveloperDashbord() {
       
           <div className={[styles.left]}>
             {/* <h2 className={styles.LeftSideContent}><span className={styles.a}><FlareIcon /></span>Devhustle</h2> */}
-            <h4 className={styles.SideContent}>PROJECTS</h4>
+            <h4 className={styles.SideContent}>PROJECT</h4>
             <span className={styles.SideContent}><span > <AddIcon /></span> Upload Projects</span>
             <h4 className={styles.SideContent}>OFFERS</h4>
             <span className={styles.SideContent}><span > <DynamicFormIcon /></span>Create Coupon Code</span>
