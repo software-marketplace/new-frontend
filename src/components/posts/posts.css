@@ -1,9 +1,11 @@
-.cardlisting{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    /* padding: 0% 5%; */
+.cardlisting {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0px;
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1500px;
+  margin: auto;
 }

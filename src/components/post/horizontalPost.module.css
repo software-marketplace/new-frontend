@@ -1,0 +1,99 @@
+.post {
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 1.5rem 1.7rem;
+  border-radius: 5px;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: 0px 9px 34px 0px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.2s;
+}
+
+.post:hover {
+  box-shadow: 0px 9px 34px 0px rgba(0, 0, 0, 0.084);
+}
+
+.post img {
+  height: 150px;
+  aspect-ratio: 16 / 9;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+
+  border-right: 2px solid rgba(0, 0, 0, 0.095);
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: -0.2rem;
+}
+
+.content span.builtBy {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.content h3 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.content p span {
+  background-color: #cecece;
+  margin-left: 0.1rem;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.646);
+  padding: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.content p span + span {
+  margin-left: 0.5rem;
+}
+
+.right {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.rating {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(98, 98, 98);
+}
+
+.rating svg:last-child {
+  margin-right: 0.2rem;
+}
+
+.btn {
+  background-color: rgba(0, 101, 0, 0.801);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.btn:hover {
+  background-color: rgb(0, 157, 0);
+}
+
+.btnSec a {
+  color: rgb(0, 94, 0);
+}
