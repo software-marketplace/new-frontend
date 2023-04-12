@@ -49,3 +49,46 @@
   font-size: 1.2rem;
   border-radius: 0 5px 5px 0;
 }
+
+.filter {
+  color: rgb(111, 111, 111);
+}
+
+.filter h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  color: rgb(56, 56, 56);
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter li {
+  cursor: pointer;
+}
+
+.filter .price {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.filter .price input {
+  width: 30%;
+}
+
+.filter .price button {
+  border: 1px solid rgb(112, 112, 112);
+  padding: 0 0.3rem;
+  background-color: rgba(255, 255, 255, 0.114);
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.filter li + li {
+  margin-top: 0.2rem;
+}
+
+.filter input[type="radio"] {
+  margin-right: 0.2rem;
+}
