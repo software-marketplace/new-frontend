@@ -14,47 +14,30 @@ import Faq from "./pages/faq";
 import { useState } from "react";
 
 export default function App() {
-  const [openChat, setOpenChat] = useState(false);
-  const [users, setUsers] = useState([{email:"priyanka.makhija05@gmail.com",password:"Abc@123!"}]);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [currentUser, setCurrentUser] = useState(null);
-  const [openLogin, setOpenLogin] = useState(false);
- constructor()
- {
-  super();
-  this.state = {
-    openChat,
-    setOpenChat,
-    users,
-    setUsers,
-    isLoggedIn,
-    setIsLoggedIn,
-    currentUser,
-    setCurrentUser,
-    openLogin,
-    setOpenLogin
-  }
- }
-  return (
-    <>
-      {/* <Navbar /> */}
-      <div className="h">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/">
-              <Route index element={<ProductListing />} />
-              <Route path="developer" element={<DeveloperDashbord />} />
-              <Route path="products" element={<ProductsPage />} />
-              {/* <Route path="product/:slug" element={<SingleProduct setOpenLogin={setOpenLogin} openLogin = {openLogin} openChat={openChat} setOpenChat={setOpenChat} currentUser={currentUser} setCurrentUser={setCurrentUser} isLoggedIn = {isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} /> */}
-              <Route path="product/:slug" />
+    const [openChat, setOpenChat] = useState(false);
+    const [users, setUsers] = useState([{ email: "priyanka.makhija05@gmail.com", password: "Abc@123!" }]);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [currentUser, setCurrentUser] = useState(null);
+    const [openLogin, setOpenLogin] = useState(false);
 
-              <Route path="userDashboard" element={<UserDashboard />} />
-              <Route path="faq" element={<Faq />} />
-            </Route>
-          </Routes>
-          <Footer />
-        </BrowserRouter>
-      </div>
-    </>
-  );
+    return (
+        <>
+            {/* <Navbar /> */}
+            <div className="h">
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/">
+                            <Route index element={<ProductListing />} />
+                            <Route path="developer" element={<DeveloperDashbord />} />
+                            <Route path="products" element={<ProductsPage />} />
+                            <Route path="product/:slug" element={<SingleProduct setOpenLogin={setOpenLogin} openLogin={openLogin} openChat={openChat} setOpenChat={setOpenChat} currentUser={currentUser} setCurrentUser={setCurrentUser} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+                            <Route path="userDashboard" element={<UserDashboard />} />
+                            <Route path="faq" element={<Faq />} />
+                        </Route>
+                    </Routes>
+                    <Footer />
+                </BrowserRouter>
+            </div>
+        </>
+    );
 }
