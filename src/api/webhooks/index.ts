@@ -13,7 +13,8 @@ router.post('/config', async (req: Request, res: Response) => {
             images: [], builtBy: req.body.builtBy, tags: req.body.tags
         },
         { upsert: true },
-        function(err, doc) {
+        function(err) {
+            console.log(err)
             if (!err) return res.send({ "success": "Product updated" })
             res.status(500)
             return res.send({ "error": err })

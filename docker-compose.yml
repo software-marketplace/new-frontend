@@ -1,10 +1,17 @@
 services:
   app:
-    build: .
+    build: 
+      context: .
+      target: dev
     env_file:
       - .env
     ports: 
       - ${PORT}:${PORT}
+    volumes:
+      - .:/usr/app
+    entrypoint:
+      - yarn
+      - dev
 
   mongo:
     image: mongo

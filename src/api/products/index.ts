@@ -3,7 +3,7 @@ import { Products } from "../../model/products"
 
 const router = Router();
 
-router.get('/', async (req: Request, res: Response) => {
+router.get('/', async (_: Request, res: Response) => {
     const data = await Products.find({});
     res.status(200)
     res.send(data)
