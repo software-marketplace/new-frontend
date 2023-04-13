@@ -10,12 +10,13 @@ const HorizontalPost = ({
   techStack,
   price,
   rating,
+  _id
 }) => {
   return (
     <div className={styles.post}>
       <img src={image} alt="" />
       <div className={styles.content}>
-        <h2>{name}</h2>
+      <Link to={"/product/"+_id}><h2>{name}</h2></Link>
         <span className={styles.builtBy}>by {builtBy}</span>
         <h3>Tech Stack</h3>
         <p>

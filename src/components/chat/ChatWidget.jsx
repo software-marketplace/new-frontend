@@ -93,6 +93,7 @@ function ChatWidget({username,devUsername}) {
       //   content,
       //   fromSelf: true,
       // });
+      addUserMessage(content);
     }
   }
 

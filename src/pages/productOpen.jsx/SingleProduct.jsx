@@ -13,8 +13,11 @@ import { useParams } from "react-router-dom";
 import data from "../../devhustle.json";
 import { useEffect } from "react";
 import Review from "../../components/post/Review";
+import Navbar from "../../components/Navbar/Navbar";
 
-export default function SingleProduct() {
+// export default function SingleProduct({openChat, setOpenChat, currentUser, setCurrentUser, isLoggedIn, setIsLoggedIn, openLogin, setOpenLogin}) {
+  export default function SingleProduct() {
+
   let params = useParams();
   console.log("params=",params.slug);
   console.log("data = ",data[Number(params.slug)]);
@@ -22,12 +25,13 @@ export default function SingleProduct() {
   const [isOpen, setIsOpen] = useState(false);
   const [imgIndex, setImgIndex] = useState(0);
   // const [imgIndex, setImgIndex] = useState(0);
-  const [openChat, setOpenChat] = useState(false);
+  // const [openChat, setOpenChat] = useState(false);
   
   const [toggle, setToggle] = useState(false);
   const [sIndex, setSIndex] = useState(0);
   const product = data[Number(params.slug)];
   console.log("product = ",product);
+  
   useEffect(()=>{
     // const slug = params.slug;
     // console.log("id = ",slug);
@@ -42,7 +46,9 @@ export default function SingleProduct() {
 
   return (
     <>
-      <Navbar2 />
+      <Navbar  />
+      {/* <Navbar openChat={openChat} setOpenChat={setOpenChat} currentUser={currentUser} setCurrentUser={setCurrentUser} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} openLogin={openLogin} setOpenLogin={setOpenLogin} /> */}
+
       <div className="yes">
         <div className="big">
           <article className="recipe bigBox">
@@ -59,7 +65,7 @@ export default function SingleProduct() {
                       alt=""
                     />
                   </div>
-                  <LightBox
+                  {/* <LightBox
                     state={toggle}
                     event={lightBoxHandler}
                     data={data}
@@ -69,10 +75,10 @@ export default function SingleProduct() {
                     thumbnailWidth={50}
                     setImageIndex={setSIndex}
                     imageIndex={sIndex}
-                  />
+                  /> */}
                 </>
               ))}
-              <ImageSection lightBoxHandler={lightBoxHandler} />
+              {/* <ImageSection lightBoxHandler={lightBoxHandler} /> */}
             </div>
 
             <div className="recipe-content">
@@ -84,7 +90,7 @@ export default function SingleProduct() {
                 <span className="recipe-votes">{product.reviews.length}</span>
               </p>
               <h1 className="recipe-pricetag">{"Rs."+product.Price}</h1>
-              <button className="recipe-save" type="button" onClick={()=>{setOpenChat(true);}}>
+              <button className="recipe-save" type="button" onClick={handleContactDeveloper}>
                 Contact Developer
               </button>
               <p className="recipe-desc">
@@ -114,6 +120,7 @@ export default function SingleProduct() {
                 </p>
               </div>
               <div>
+
                 {product.reviews.map((item,index)=>
                   <Review rating = {item.rating} review={item.review} id={item.id} user = {item.user}/>
                   // <Review item={item}/>
@@ -149,8 +156,8 @@ export default function SingleProduct() {
             </div>
           </article>
         </div>
-        {openChat && <ChatWidget username={"priyanka@gmail.com"} devUsername={"developer"} />}
       </div>
+        {openChat && <ChatWidget username={"priyanka@gmail.com"} devUsername={"developer"} />}
     </>
   );
 }

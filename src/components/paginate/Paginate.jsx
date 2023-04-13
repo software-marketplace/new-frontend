@@ -20,6 +20,7 @@ function Items({ currentItems }) {
               ...product.compare.frontend,
               ...product.compare.backend,
             ]}
+            _id={product._id}
           />
         ))}
     </div>

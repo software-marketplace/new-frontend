@@ -3,7 +3,7 @@ import Login from '../../components/LoginSignup/Login'
 import Signup from '../../components/LoginSignup/Signup'
 import './loginSignup.css'
 
-export default function LoginSignup({setIsModalOpen}) {
+export default function LoginSignup({setIsModalOpen, users, setUsers}) {
     const [loginOpen,setLoginClose] = useState(true)
 
   return (

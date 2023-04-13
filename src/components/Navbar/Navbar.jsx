@@ -8,14 +8,34 @@ import "../../components/Navbar/navbar.css";
 import LoginSignup from "../../pages/login-signupmodal/loginSignup";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+// const Navbar = ({openChat, setOpenChat, currentUser, setCurrentUser, isLoggedIn, setIsLoggedIn, openLogin, setOpenLogin}) => {
+  const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  // const [openChat, setOpenChat] = useState(false);
+  // const [users, setUsers] = useState([{email:"priyanka.makhija05@gmail.com",password:"Abc@123!"}]);
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const [currentUser, setCurrentUser] = useState(null);
+  // const [openLogin, setOpenLogin] = useState(false);
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const handleContactDeveloper = () => {
+    console.log("cuser = ",currentUser);
+   if(currentUser==null)
+   {
+       setOpenLogin(true);
+   }
+   else
+   {
+       setOpenChat(true);
+   }
+
+}
+  const openChatWindow = () => {
+
+  }
   return (
     <>
       <nav className="navbar">
@@ -39,6 +59,11 @@ const Navbar = () => {
                   <button className="button1">For Developers</button>
                 </Link>
               </li>
+              { isLoggedIn && (
+                <li>
+                  <button className="" onClick={openChatWindow}>For Developers</button>
+              </li>
+              )}
             </ul>
           </div>
         </div>
