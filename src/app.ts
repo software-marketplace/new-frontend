@@ -9,8 +9,6 @@ import webhooksRouter from "./api/webhooks";
 import productsRouter from "./api/products";
 import authRouter from "./api/auth";
 
-const cors = require('cors');
-
 dotenv.config();
 
 // Server

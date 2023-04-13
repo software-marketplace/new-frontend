@@ -7,10 +7,15 @@ router.post('/config', async (req: Request, res: Response) => {
     Products.findOneAndUpdate(
         { repository: req.body.repository },
         {
-            name: req.body.config.name,
-            description: req.body.config.description,
+            product_name: req.body.config.product_name,
+            product_description: req.body.config.product_description,
+            images: req.body.config.images,
+            display_image: req.body.config.display_image,
+            built_by: req.body.config.built_by,
+            rating: req.body.config.rating,
+            Price: req.body.config.Price,
+            tags: req.body.config.tags,
             repository: req.body.repository,
-            images: [], builtBy: req.body.builtBy, tags: req.body.tags
         },
         { upsert: true },
         function(err) {

@@ -1,11 +1,11 @@
-import {Schema, model} from "mongoose";
+import { Schema, model } from "mongoose";
 
 const ProductsSchema = new Schema({
-    name: {
+    product_name: {
         required: true,
         type: String
     },
-    description: {
+    product_description: {
         required: false,
         type: String
     },
@@ -13,7 +13,7 @@ const ProductsSchema = new Schema({
         required: true,
         type: Array
     },
-    builtBy: {
+    built_by: {
         required: true,
         type: String
     },
@@ -36,5 +36,5 @@ const ProductsSchema = new Schema({
 const Products = model('Products', ProductsSchema)
 
 export {
-    Products 
+    Products
 }
