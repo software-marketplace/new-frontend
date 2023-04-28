@@ -1,7 +1,7 @@
-// import { GithubApp } from "./githubApp"
+import { Users } from './users'
 import { Products } from "./products"
 
 export {
-  // GithubApp,
-  Products
+    Users,
+    Products
 }

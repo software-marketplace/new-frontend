@@ -1,4 +1,7 @@
 import { Router, Request, Response } from "express";
+import { Users } from "../../model";
+import { getHash } from "./utils";
+import { sign } from "./jwt";
 
 const router = Router();
 
@@ -23,6 +26,36 @@ router.post("/github", async (req: Request, res: Response) => {
     }
 
     res.send(data);
+})
+
+router.post("/login", async (req: Request, res: Response) => {
+    let { email, password } = req.body;
+    password = getHash(password);
+
+    const user = await Users.find({ email: email, password: password });
+
+    if (!user) return res.status(401).send({ message: "Failed to login" });
+
+    const token = sign({ email: email })
+
+    return res.status(200).send({ access_token: token });
+})
+
+router.post("/register", async (req: Request, res: Response) => {
+    const { name, email, password, mobile_number } = req.body;
+
+    const user = await Users.create({
+        name: name,
+        email: email,
+        password: getHash(password),
+        mobile_number: mobile_number,
+    })
+
+    if (!user) {
+        return res.status(400).send({ message: "Failed to register" });
+    }
+
+    return res.status(200).send({ message: "Register success" });
 })
 
 export default router;

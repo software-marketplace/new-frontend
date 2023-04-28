@@ -13,11 +13,20 @@ const ProductsSchema = new Schema({
         required: true,
         type: Array
     },
+    display_image: {
+        required: true,
+        type: String
+    },
     built_by: {
         required: true,
         type: String
     },
     rating: {
+        required: true,
+        default: 0.0,
+        type: Number
+    },
+    Price: {
         required: true,
         default: 0.0,
         type: Number
