@@ -26,7 +26,7 @@ const ProductsSchema = new Schema({
         default: 0.0,
         type: Number
     },
-    Price: {
+    price: {
         required: true,
         default: 0.0,
         type: Number
@@ -38,6 +38,7 @@ const ProductsSchema = new Schema({
     },
     repository: {
         required: true,
+        default: "https://github.com/username/repo",
         type: String
     }
 })

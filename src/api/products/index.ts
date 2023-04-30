@@ -3,7 +3,41 @@ import { Products } from "../../model/products"
 
 const router = Router();
 
-router.get('/', async (req: Request, res: Response) => {
+/**
+ * @swagger
+ * /products:
+ *   get:
+ *     tags: [Products]
+ *     description: Get all Products
+ *     parameters:
+ *       - in: query
+ *         name: search
+ *         schema:
+ *           type: string
+ *           description: Search by name
+ *       - in: query
+ *         name: filter_categories
+ *         schema:
+ *           type: array
+ *           description: Filter by categories
+ *       - in: query
+ *         name: filter_price
+ *         schema:
+ *           type: string
+ *           description: Filter by price range
+ *           example: 0-100
+ *           default: "" 
+ *       - in: query
+ *         name: filter_min_rating
+ *         schema:
+ *           type: number
+ *           description: Filter by minimum rating
+ *           example: 3
+ *   responses:
+ *     200:
+ *       description: Returns all products
+ */
+router.get('', async (req: Request, res: Response) => {
     const query: any = {}
 
     // get name from search query params if exist
@@ -28,9 +62,9 @@ router.get('/', async (req: Request, res: Response) => {
         query['rating'] = { $gte: req.query.filter_min_rating as string }
     }
 
-    const data = await Products.find(query);
-    res.status(200)
-    res.send(data)
+    const data = await Products.find(query)
+    console.log(data)
+    return res.status(200).send(data)
 })
 
 export default router
