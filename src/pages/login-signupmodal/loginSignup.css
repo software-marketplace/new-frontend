@@ -179,6 +179,13 @@
     border-color: #ff574e;
 }
 
+.login .login-form .error {
+    color: #ff9494;
+    margin-bottom: 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
 .login .login-form button,
 .login .login-form input[type=submit] {
     display: inline-block;
