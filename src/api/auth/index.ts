@@ -77,12 +77,11 @@ router.post("/login", async (req: Request, res: Response) => {
     let { email, password } = req.body;
     password = getHash(password);
 
-    const user = await Users.find({ email: email, password: password });
-    if (!user) return res.status(401).send({ message: "Failed to login" });
+    let user: any = await Users.find({ email: email, password: password });
+    if (!user.length) return res.status(401).send({ message: "Failed to login" });
 
-    const token = sign({ email: email })
-
-    return res.status(200).send({ access_token: token });
+    const token = sign({ email: email, name: user[0].name })
+    return res.status(200).send({ access_token: token, email: email, name: user[0].name });
 })
 
 /**
@@ -111,7 +110,7 @@ router.post("/login", async (req: Request, res: Response) => {
  *                 type: string
  *                 required: true
  *                 description: Password of the Users
- *               mobile_number:
+ *               mobile:
  *                 type: string
  *                 required: true
  *                 description: Mobile number of the Users
@@ -129,13 +128,13 @@ router.post("/login", async (req: Request, res: Response) => {
  *                   example: Register Success
  */
 router.post("/register", async (req: Request, res: Response) => {
-    const { name, email, password, mobile_number } = req.body;
+    const { name, email, password, mobile } = req.body;
 
     const user = await Users.create({
         name: name,
         email: email,
         password: getHash(password),
-        mobile_number: mobile_number,
+        mobile: mobile,
     })
 
     if (!user) {

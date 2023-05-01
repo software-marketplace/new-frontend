@@ -13,7 +13,7 @@ const UsersSchema = new Schema({
         required: true,
         type: String
     },
-    mobile_number: {
+    mobile: {
         required: true,
         type: String
     },
