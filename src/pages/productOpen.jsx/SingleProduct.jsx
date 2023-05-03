@@ -14,6 +14,7 @@ import data from "../../devhustle.json";
 import { useEffect } from "react";
 import Review from "../../components/post/Review";
 import Navbar from "../../components/Navbar/Navbar";
+import { baseUrl } from "../../config";
 
 // export default function SingleProduct({openChat, setOpenChat, currentUser, setCurrentUser, isLoggedIn, setIsLoggedIn, openLogin, setOpenLogin}) {
 export default function SingleProduct() {
@@ -21,6 +22,7 @@ export default function SingleProduct() {
   console.log("params=", params.slug);
   console.log("data = ", data[Number(params.slug)]);
   // const [product, setProduct] = useState({});
+  const [product, setProduct] = useState();
   const [isOpen, setIsOpen] = useState(false);
   const [imgIndex, setImgIndex] = useState(0);
   // const [imgIndex, setImgIndex] = useState(0);
@@ -28,14 +30,70 @@ export default function SingleProduct() {
 
   const [toggle, setToggle] = useState(false);
   const [sIndex, setSIndex] = useState(0);
-  const product = data[Number(params.slug)];
-  console.log("product = ", product);
-
+  let highlights = [];
   useEffect(() => {
-    // const slug = params.slug;
-    // console.log("id = ",slug);
-    // setProduct(data[slug]);
-  }, []);
+    fetch(`${baseUrl}/product/${params.slug}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res2) => {
+        // product = res2;
+        setProduct(res2);
+        console.log("product = ", product);
+
+        let highlights = [];
+
+        if (product.compare.frontend.length > 0)
+          highlights.push(
+            "Frontend technologies: " + product.compare.frontend.join(",")
+          );
+        if (product.compare.backend.length > 0)
+          highlights.push(
+            "Backend technologies: " + product.compare.backend.join(",")
+          );
+        if (product.compare.cloud_providers.length > 0)
+          highlights.push(
+            "Cloud Providers: " + product.compare.cloud_providers.join(",")
+          );
+        if (product.compare.cloud_Services.length > 0)
+          highlights.push(
+            "Cloud Services: " + product.compare.cloud_Services.join(",")
+          );
+        if (product.compare.type)
+          highlights.push("Type: " + product.compare.type);
+        if (product.compare.admin.toLowerCase() === "yes")
+          highlights.push("Admin module available");
+        if (product.compare.tracking_dashboards.toLowerCase() === "yes")
+          highlights.push("Tracking Dashboards available");
+        if (product.compare.navigation_dashboards.toLowerCase() === "yes")
+          highlights.push("Login dashboards available");
+        if (product.compare.is_cloud_data_store.toLowerCase() === "yes")
+          highlights.push("Data stored in cloud");
+        if (product.compare.databases.length > 0)
+          highlights.push(
+            "Databases used: " + product.compare.databases.join(",")
+          );
+        if (product.compare.architecture.length > 0)
+          highlights.push(
+            "Architecture used: " + product.compare.architecture.join(",")
+          );
+        if (product.compare.license.length > 0)
+          highlights.push(
+            "Licenses available: " + product.compare.license.join(",")
+          );
+        if (product.compare.maintainance_lifetime.toLowerCase() === "yes")
+          highlights.push("Lifetime Maintanence available");
+        if (product.compare.maintainance_in_months.toLowerCase() !== "na")
+          highlights.push(
+            "Maintanence period of " +
+              product.compare.maintainance_in_months +
+              " months"
+          );
+      });
+  }, [params.slug]);
 
   // Handler
   const lightBoxHandler = (state, sIndex) => {
@@ -95,12 +153,15 @@ export default function SingleProduct() {
               <p className="recipe-desc">{product.description}</p>
               <h2 className="subHeader">Highlights</h2>
               <ul className="listedItem">
-                <li>Admin Dashbard</li>
+                {highlights.map((item, index) => (
+                  <li>{item}</li>
+                ))}
+                {/* <li>Admin Dashbard</li>
                 <li>Highly Cursomizable</li>
                 <li>Highly Cursomizable</li>
                 <li>Easy revenue tracking</li>
                 <li>Admin dashboard</li>
-                <li>Highly Cursomizable</li>
+                <li>Highly Cursomizable</li> */}
               </ul>
 
               <div className="detailSection">
