@@ -1,12 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Navbar2 from "../../components/Navbar/Navbar";
 import styles from "./productspage.module.css";
 import HorizontalPost from "../../components/post/HorizontalPost";
 import PaginatedItems from "../../components/paginate/Paginate";
-import Data from "../../devhustle.json";
+// import Data from "../../devhustle.json";
+import {baseUrl} from "../../config";
 
 const ProductsPage = () => {
-  const [data, setData] = useState(Data);
+  const [data, setData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [category, setCategory] = useState("");
   const [price, setPrice] = useState({ from: "", to: "" });
@@ -14,27 +15,46 @@ const ProductsPage = () => {
   const fromPrice = useRef();
   const toPrice = useRef();
 
-  // paginate
+  let Data;
+  useEffect(()=>{
+  fetch(`${baseUrl}/products`, {
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json",
+    },
+}).then((res)=>res.json()).then((res2)=>{
+  setData(res2);
+  Data = res2;
+})
+},[]);
 
   const search = () => {
-    setData(
-      Data.filter(
-        (product) =>
-          product.product_name
-            .toLowerCase()
-            .includes(searchQuery.toLowerCase()) ||
-          product.tags
-            .join(" ")
-            .toLowerCase()
-            .includes(searchQuery.toLowerCase())
-      )
-    );
-  };
+    fetch(`${baseUrl}/products?search=${searchQuery}`, {
+      method: "GET",
+      headers: {
+          "Content-Type": "application/json",
+      },
+  }).then((res)=>res.json()).then((res2)=>{
+    setData(res2);
+  });
+  }
 
-  const handleRatingChange = (numberAsString) => {
+ const handleRatingChange = (numberAsString) => {
+    
     setRating(parseInt(numberAsString));
+    fetchFilteredData();
   };
 
+  const fetchFilteredData = () => {
+    fetch(`${baseUrl}/products?filter_min_rating=${rating}&filter_categories=${category}&filter_price=${price.to}-${price.from}`, {
+      method: "GET",
+      headers: {
+          "Content-Type": "application/json",
+      },
+  }).then((res)=>res.json()).then((res2)=>{
+    setData(res2);
+  });
+  }
   const tags = [];
 
   data.forEach((product) => {
