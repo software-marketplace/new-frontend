@@ -36,6 +36,12 @@ const router = Router();
  *   responses:
  *     200:
  *       description: Returns all products
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: array
+ *             items:
+ *               $ref: '#/components/schemas/Product'
  */
 router.get('', async (req: Request, res: Response) => {
     const query: any = {}
@@ -63,8 +69,7 @@ router.get('', async (req: Request, res: Response) => {
     }
 
     const data = await Products.find(query)
-    console.log(data)
-    return res.status(200).send(data)
+    return res.status(200).send(JSON.stringify(data))
 })
 
 export default router

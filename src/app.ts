@@ -7,11 +7,13 @@ import cors from 'cors';
 import { logger } from './logger';
 import { options } from './swagger';
 import { initDatabase } from './database';
+import { verify } from './jwt';
 
 import statusRoute from "./api";
 import webhooksRouter from "./api/webhooks";
 import productsRouter from "./api/products";
 import authRouter from "./api/auth";
+import chatsRouter from "./api/chats";
 
 
 dotenv.config();
@@ -27,12 +29,14 @@ app.use(cors({
 }));
 app.use(express.urlencoded({ extended: true }));
 app.use(logger);
+app.use(verify);
 
 // routes
 app.get('/', statusRoute);
 app.use('/webhooks', webhooksRouter);
 app.use('/products', productsRouter);
 app.use('/auth', authRouter);
+app.use('/chats', chatsRouter);
 
 // swagger
 const swaggerSpec = swaggerJSDoc(options);

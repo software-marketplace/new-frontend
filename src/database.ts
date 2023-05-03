@@ -1,12 +1,14 @@
 import { Express } from 'express';
 import { connect, connection, set } from "mongoose";
 import { forceData } from './forceData';
+import ChatServer from './socket';
 
 export const initDatabase = (app: Express, port: number): void => {
     const mongoString: string | undefined = process.env.DATABASE_URL
     set('strictQuery', false);
+
     if (mongoString) connect(mongoString);
-    else throw new Error("set \"DATABASE_URL\" in .env file");
+    else throw new Error('set "DATABASE_URL" in .env file');
 
     const database = connection
     database.on('error', (error) => {
@@ -18,8 +20,10 @@ export const initDatabase = (app: Express, port: number): void => {
             forceData();
         }
 
-        app.listen(port, () => {
+        const server = app.listen(port, () => {
             console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
         });
+
+        new ChatServer(server);
     })
 }

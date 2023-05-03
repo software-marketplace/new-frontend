@@ -77,7 +77,7 @@ router.post("/login", async (req: Request, res: Response) => {
     let { email, password } = req.body;
     password = getHash(password);
 
-    let user: any = await Users.find({ email: email, password: password });
+    let user: Array<any> = await Users.find({ email, password });
     if (!user.length) return res.status(401).send({ message: "Failed to login" });
 
     const token = sign({ email: email, name: user[0].name })

@@ -1,11 +1,11 @@
 services:
   app:
-    build: 
+    build:
       context: .
       target: dev
     env_file:
       - .env
-    ports: 
+    ports:
       - ${PORT}:${PORT}
     volumes:
       - .:/usr/app
