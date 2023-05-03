@@ -1,0 +1,36 @@
+.itemsContainer {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.paginate {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.paginate .previous,
+.paginate .next {
+  border: 1px solid green;
+  border-radius: 5px;
+  color: green;
+}
+
+.paginate li a {
+  display: block;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.paginate li.selected a {
+  border: 1px solid green;
+  color: green;
+}

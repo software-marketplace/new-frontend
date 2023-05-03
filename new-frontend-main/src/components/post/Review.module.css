@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.review_section {
+  box-sizing: border-box;
+   font-family: 'Raleway', sans-serif !important;
+  width:80vw;
+  margin:0 auto;
+}
+.review_section *,
+.review_section *::before,
+.review_section *::after {
+  box-sizing: inherit; 
+}
+.review_section *:focus,.review_section *:active
+{
+  outline:0 !important;
+}
+.review_section *{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+.review_section body,.review_section td,.review_section th,.review_section p{
+	color: #333;
+   font-family: 'Raleway', sans-serif;
+}
+.review_section body {
+	background-color: #fdfdfd;
+	margin: 0;
+	position:relative;
+}
+.review_section h2 {
+  display: inline-block;
+}
+.review_section #review-add-btn {
+  padding: 0;
+  font-size: 1.6em;
+  cursor: pointer;
+}
