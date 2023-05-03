@@ -2,12 +2,7 @@ import React from "react";
 import styles from "./Review.module.css";
 import { Link } from "react-router-dom";
 
-const Review = ({
-  id,
-  user,
-  rating,
-  review,
-}) => {
+const Review = ({ id, user, rating, review }) => {
   return (
     // <div className={styles.post}>
     //   <img src={"avatar.png"} alt="" />
@@ -42,27 +37,43 @@ const Review = ({
     //   {/* </div> */}
     // </div>
     <div>
-    <div className={"blog-card"}>
-            <div className={styles.meta}>
-              <img className={styles.photo} src={"https://adittyadey.xyz/img/pp.jpg"}></img>
-            </div>
-            <div className={styles.description}>
-              <h1>Great Product!!</h1>
-              <span className={"fa fa-star checked"}></span>
-<span className={"fa fa-star checked"}></span>
-<span className={"fa fa-star checked"}></span>
-<span className={"fa fa-star"}></span>
-<span className={"fa fa-star"}></span>
-              <br/>
-              <h2>Adittya Dey</h2>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+      <div className={"blog-card"}>
+        <div className={styles.meta}>
+          {/* <img className={styles.photo} src={"https://adittyadey.xyz/img/pp.jpg"}></img> */}
+          <i
+            class="fa fa-user-circle-o"
+            aria-hidden="true"
+            style={{ fontSize: "5em" }}
+          ></i>
+        </div>
+        <div className={styles.description}>
+          <h1>Great Product!!</h1>
+          <span className={"fa fa-star checked"}></span>
+          <span className={"fa fa-star checked"}></span>
+          <span className={"fa fa-star checked"}></span>
+          <span className={"fa fa-star"}></span>
+          <span className={"fa fa-star"}></span>
+          <br />
+          <h2>Adittya Dey</h2>
+          <p>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
+            dolorum architecto obcaecati enim dicta praesentium, quam nobis!
+            Neque ad aliquam facilis numquam. Veritatis, sit.Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Ad eum dolorum architecto
+            obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam
+            facilis numquam. Veritatis, sit.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Ad eum dolorum architecto obcaecati
+            enim dicta praesentium, quam nobis! Neque ad aliquam facilis
+            numquam. Veritatis, sit.
+          </p>
+        </div>
+      </div>
 
-            </div>
-          </div>
-
-      <br/>
-        
-          </div>
+      <br />
+      <hr />
+      <br />
+    </div>
   );
 };
 
