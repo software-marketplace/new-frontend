@@ -6,7 +6,7 @@ import { NextFunction, Request, Response } from "express";
 const protectedRoutes = ["/chats"]
 
 export const verify = async (req: Request, res: Response, next: NextFunction) => {
-    if (req.path in protectedRoutes) {
+    if (protectedRoutes.includes(req.path)) {
 
         if (!req.headers.authorization) {
             return res.status(401).send({ message: "No token provided" });
@@ -14,13 +14,7 @@ export const verify = async (req: Request, res: Response, next: NextFunction) =>
 
         const token = req.headers.authorization?.split(" ")[1];
 
-        if (token.substring(0, 3) !== "ghu") {
-            //const response = await fetch(`https://github.com/applications/Iv1.aff67714bc9e4d05/tokens/${token}`, {
-            //headers: {
-            //Authorization: "Basic SXYxLmFmZjY3NzE0YmM5ZTRkMDU6MTk3NWU2ODU5MDcwN2RhOTM5OTNkODMzYmNhZWQ1OTBiMGI0Zjk5Zg=="
-            //}
-            //})
-
+        if (token.substring(0, 3) === "ghu") {
             const response = await fetch(`https://api.github.com/user`, {
                 headers: {
                     Authorization: `token ${token}`
@@ -32,8 +26,7 @@ export const verify = async (req: Request, res: Response, next: NextFunction) =>
             }
 
             const data = await response.json();
-            console.log(data)
-            req.query.user = data;
+            req.query.user = data.email;
 
 
             next()
