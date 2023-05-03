@@ -22,11 +22,13 @@ const router = Router();
  */
 router.get('', async (req: Request, res: Response) => {
     const { user, to } = req.query;
+    console.log(user, to)
     const chats = await Chats.find({
+        sender: user,
+        receiver: to
     }).sort({ timestamp: 1 });
 
     console.log(chats)
-
     res.status(200).send(chats);
 })
 

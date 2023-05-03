@@ -2,6 +2,7 @@ import { Router, Request, Response } from "express";
 import { Users } from "../../model";
 import { getHash } from "./utils";
 import { sign } from "./jwt";
+import config from "../../config";
 
 const router = Router();
 
@@ -35,8 +36,8 @@ router.post("/github", async (req: Request, res: Response) => {
             Accept: "application/json",
         },
         body: JSON.stringify({
-            client_id: "Iv1.aff67714bc9e4d05",
-            client_secret: "1975e68590707da93993d833bcaed590b0b4f99f",
+            client_id: config.GITHUB_CLIENT_ID,
+            client_secret: config.GITHUB_CLIENT_SECRET,
             code: code,
         })
     })

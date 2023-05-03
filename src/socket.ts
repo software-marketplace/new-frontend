@@ -43,10 +43,8 @@ export default class ChatServer {
 
         this.io.on("connect", (socket: any) => {
             users[socket.email] = socket;
-            console.log(socket.name + " connected");
 
             socket.on("message", (msg: string) => {
-                console.log('message: ' + msg);
                 const m: ChatsInterface = JSON.parse(msg);
 
                 // save message to database
