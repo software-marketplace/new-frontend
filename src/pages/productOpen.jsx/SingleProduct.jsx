@@ -90,7 +90,7 @@ export default function SingleProduct() {
   return (
     <>
       <Navbar />
-      Loading...
+      {!product && <p>Loading...</p>}
       {/* <Navbar openChat={openChat} setOpenChat={setOpenChat} currentUser={currentUser} setCurrentUser={setCurrentUser} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} openLogin={openLogin} setOpenLogin={setOpenLogin} /> */}
       {product && (
         <div className="yes">
@@ -177,7 +177,7 @@ export default function SingleProduct() {
                       (item, index) => (
                         <Review
                           rating={item.rating}
-                          review={item.review}
+                          comment={item.comment}
                           id={item.id}
                           user={item.user}
                         />

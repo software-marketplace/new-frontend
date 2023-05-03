@@ -4,9 +4,18 @@ import styles from "./productspage.module.css";
 import HorizontalPost from "../../components/post/HorizontalPost";
 import PaginatedItems from "../../components/paginate/Paginate";
 // import Data from "../../devhustle.json";
-import {baseUrl} from "../../config";
+import { baseUrl } from "../../config";
+import ProductComparisonTable from "../../components/compare/ProductComparisonTable";
+import { Link } from "react-router-dom";
 
-const ProductsPage = () => {
+const ProductsPage = ({
+  // selectedProducts,
+  // setSelectedProducts,
+  getSelectedProductCount,
+  handleProductRemove,
+  handleProductSelect,
+  isProductSelected,
+}) => {
   const [data, setData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [category, setCategory] = useState("");
@@ -14,47 +23,56 @@ const ProductsPage = () => {
   const [rating, setRating] = useState(0);
   const fromPrice = useRef();
   const toPrice = useRef();
+  // const [selectedProducts, setSelectedProducts] = useState([]);
 
   let Data;
-  useEffect(()=>{
-  fetch(`${baseUrl}/products`, {
-    method: "GET",
-    headers: {
+  useEffect(() => {
+    fetch(`${baseUrl}/products`, {
+      method: "GET",
+      headers: {
         "Content-Type": "application/json",
-    },
-}).then((res)=>res.json()).then((res2)=>{
-  setData(res2);
-  Data = res2;
-})
-},[]);
+      },
+    })
+      .then((res) => res.json())
+      .then((res2) => {
+        setData(res2);
+        Data = res2;
+      });
+  }, []);
 
   const search = () => {
     fetch(`${baseUrl}/products?search=${searchQuery}`, {
       method: "GET",
       headers: {
-          "Content-Type": "application/json",
+        "Content-Type": "application/json",
       },
-  }).then((res)=>res.json()).then((res2)=>{
-    setData(res2);
-  });
-  }
+    })
+      .then((res) => res.json())
+      .then((res2) => {
+        setData(res2);
+      });
+  };
 
- const handleRatingChange = (numberAsString) => {
-    
+  const handleRatingChange = (numberAsString) => {
     setRating(parseInt(numberAsString));
     fetchFilteredData();
   };
 
   const fetchFilteredData = () => {
-    fetch(`${baseUrl}/products?filter_min_rating=${rating}&filter_categories=${category}&filter_price=${price.to}-${price.from}`, {
-      method: "GET",
-      headers: {
+    fetch(
+      `${baseUrl}/products?filter_min_rating=${rating}&filter_categories=${category}&filter_price=${price.to}-${price.from}`,
+      {
+        method: "GET",
+        headers: {
           "Content-Type": "application/json",
-      },
-  }).then((res)=>res.json()).then((res2)=>{
-    setData(res2);
-  });
-  }
+        },
+      }
+    )
+      .then((res) => res.json())
+      .then((res2) => {
+        setData(res2);
+      });
+  };
   const tags = [];
 
   data.forEach((product) => {
@@ -80,6 +98,24 @@ const ProductsPage = () => {
   // filter rating
   finalData = finalData.filter((prod) => prod.rating >= rating);
 
+  // const handleProductSelect = (product) => {
+  //   console.log("in HPS");
+  //   if (selectedProducts.length >= 3) return false;
+  //   const newSelectedProducts = [...selectedProducts, product];
+  //   setSelectedProducts(newSelectedProducts);
+  //   return true;
+  // };
+
+  // const handleProductRemove = (product) => {
+  //   const newSelectedProducts = selectedProducts.filter(
+  //     (p) => p.id !== product.id
+  //   );
+  //   setSelectedProducts(newSelectedProducts);
+  // };
+
+  // const isProductSelected = (product) => {
+  //   return selectedProducts.some((p) => p.id === product.id);
+  // };
   return (
     <div className={styles.container}>
       <Navbar2 />
@@ -192,9 +228,26 @@ const ProductsPage = () => {
           </div>
         </div>
         <div className={styles.main}>
-          <PaginatedItems items={finalData} itemsPerPage={7} />
+          {getSelectedProductCount() > 0 && (
+            <Link
+              to="/product-comparison-table"
+              target="_blank"
+              style={{ color: "black" }}
+            >
+              Open Product Comparison Table
+            </Link>
+          )}
+
+          <PaginatedItems
+            items={finalData}
+            itemsPerPage={7}
+            handleProductSelect={handleProductSelect}
+            handleProductRemove={handleProductRemove}
+            isProductSelected={isProductSelected}
+          />
         </div>
       </div>
+      {/* <ProductComparisonTable products={selectedProducts} /> */}
     </div>
   );
 };
