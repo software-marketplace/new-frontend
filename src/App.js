@@ -61,7 +61,7 @@ export default function App() {
           <Routes>
             <Route path="/">
               <Route index element={<ProductListing />} />
-              <Route path="developer" element={<DeveloperDashbord />} />
+              {/* <Route path="developer" element={<DeveloperDashbord />} /> */}
               <Route
                 path="products"
                 element={
@@ -88,7 +88,7 @@ export default function App() {
                   />
                 }
               />
-              <Route path="userDashboard" element={<UserDashboard />} />
+              {/* <Route path="userDashboard" element={<UserDashboard />} /> */}
               <Route path="faq" element={<Faq />} />
               <Route
                 path="/product-comparison-table"
