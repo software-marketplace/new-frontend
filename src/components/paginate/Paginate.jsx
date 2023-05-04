@@ -3,7 +3,13 @@ import ReactPaginate from "react-paginate";
 import HorizontalPost from "../post/HorizontalPost";
 import "./paginate.css";
 
-function Items({ currentItems, contactDeveloper }) {
+function Items({
+  currentItems,
+  handleProductRemove,
+  handleProductSelect,
+  isProductSelected,
+    contactDeveloper,
+}) {
   return (
     <div className="itemsContainer">
       {currentItems &&
@@ -25,13 +31,24 @@ function Items({ currentItems, contactDeveloper }) {
               ...product.compare.backend,
             ]}
             _id={product._id}
+            handleProductSelect={handleProductSelect}
+            handleProductRemove={handleProductRemove}
+            isProductSelected={isProductSelected}
+            product={product}
           />
         })}
     </div>
   );
 }
 
-function PaginatedItems({ itemsPerPage, items, contactDeveloper }) {
+function PaginatedItems({
+  itemsPerPage,
+  items,
+  handleProductRemove,
+  handleProductSelect,
+  isProductSelected,
+    contactDeveloper,
+}) {
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0);
@@ -55,7 +72,13 @@ function PaginatedItems({ itemsPerPage, items, contactDeveloper }) {
 
   return (
     <div style={{ width: "100%" }}>
-      <Items currentItems={currentItems} contactDeveloper={contactDeveloper}/>
+      <Items
+        currentItems={currentItems}
+      contactDeveloper={contactDeveloper}
+        handleProductSelect={handleProductSelect}
+        handleProductRemove={handleProductRemove}
+        isProductSelected={isProductSelected}
+      />
       <ReactPaginate
         breakLabel="..."
         nextLabel="next >"

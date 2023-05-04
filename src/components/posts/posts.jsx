@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./posts.css";
-import Data from "../../devhustle.json";
+// import Data from "../../devhustle.json";
 import VerticalPost from "../post/VerticalPost";
+import { baseUrl } from "../../config";
 
-export default function posts() {
-    const top_posts = Data.slice(0, 9);
+export default function Posts() {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        fetch(`${baseUrl}/products`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
+            .then((res) => res.json())
+            .then((res2) => {
+                setData(res2);
+                // Data = res2;
+            });
+    }, []);
+    const top_posts = data.slice(0, 9);
     //console.log(top_posts);
     return (
         <div className="cardlisting">

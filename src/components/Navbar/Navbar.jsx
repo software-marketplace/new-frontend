@@ -31,7 +31,7 @@ const Navbar = () => {
 
                     <div className={`nav-elements  ${showNavbar && "active"}`}>
                         {localStorage.getItem("access_token") ? (
-                            <ProfileDropdown setIsLogin />
+                            <ProfileDropdown setIsLogin={setIsLogin} />
                         ) : (
                             <ul>
                                 <li>

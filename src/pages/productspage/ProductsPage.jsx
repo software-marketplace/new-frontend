@@ -14,7 +14,6 @@ const ProductsPage = ({ contactDeveloper }) => {
     const [rating, setRating] = useState(0);
     const fromPrice = useRef();
     const toPrice = useRef();
-    console.log(contactDeveloper)
 
     let Data;
     useEffect(() => {
@@ -93,6 +92,7 @@ const ProductsPage = ({ contactDeveloper }) => {
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />
                 <button onClick={search}>Search</button>
+
             </div>
             <div className={styles.mainContainer}>
                 <div className={styles.sidebar}>

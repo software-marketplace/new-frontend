@@ -9,12 +9,14 @@
         "@mui/icons-material": "^5.11.16",
         "@mui/material": "^5.12.0",
         "@mui/styled-engine-sc": "^5.12.0",
+        "@popperjs/core": "^2.11.7",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
         "antd": "^5.4.2",
         "mdb-react-ui-kit": "^5.1.0",
         "node-sass": "npm:sass@^1.55.0",
+        "popper.js": "^1.16.1",
         "react": "^18.2.0",
         "react-chat-engine": "^1.11.28",
         "react-dom": "^18.2.0",
@@ -30,7 +32,7 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "start": "react-scripts start",
+        "start": "set PORT=3002 && react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
