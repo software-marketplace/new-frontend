@@ -6,6 +6,14 @@
   width: 100%;
 }
 
+.itemsContainer h2 {
+  color: #454545;
+}
+
+li .previous a {
+    color: #454545;
+}
+
 .paginate {
   list-style: none;
   display: flex;
@@ -20,12 +28,12 @@
 .paginate .next {
   border: 1px solid green;
   border-radius: 5px;
-  color: green;
 }
 
 .paginate li a {
   display: block;
   cursor: pointer;
+  color: green !important;
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }

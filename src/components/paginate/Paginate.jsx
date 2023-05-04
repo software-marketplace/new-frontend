@@ -7,14 +7,16 @@ function Items({ currentItems }) {
   return (
     <div className="itemsContainer">
       {currentItems &&
-        currentItems.map((product, i) => (
-          <HorizontalPost
+        currentItems.map((product, i) => { 
+            console.log(product)
+
+          return <HorizontalPost
             key={i}
             image={product.display_image}
             name={product.product_name}
             description={product.product_description}
             builtBy={product.built_by}
-            price={product.Price}
+            price={product.price}
             rating={product.rating}
             techStack={[
               ...product.compare.frontend,
@@ -22,7 +24,7 @@ function Items({ currentItems }) {
             ]}
             _id={product._id}
           />
-        ))}
+        })}
     </div>
   );
 }

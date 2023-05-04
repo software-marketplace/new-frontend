@@ -1,6 +1,6 @@
 const baseUrl =
-  process.env.NODE_ENV === "production"
-    ? "http://3.110.236.222:8000"
-    : "https://devel-service-app.onrender.com";
+    process.env.NODE_ENV === "production"
+        ? "https://devel-service-app.onrender.com"
+        : "http://localhost:8000"
 
 export { baseUrl };

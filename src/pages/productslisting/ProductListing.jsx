@@ -3,13 +3,10 @@
 import React, { useState, useEffect } from "react";
 import Navbar2 from "../../components/Navbar/Navbar";
 import styles from "./ProductListing.module.css";
-import cat from "../../assets/cat.webp";
 import Posts from "../../components/posts/posts";
-import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
-import FaqSection from "../Faqsection/FaqSection";
-import Footer from "../../components/footer/Footer";
 import { useSearchParams } from "react-router-dom";
 import { baseUrl } from "../../config";
+import ChatWidget from "../../components/ChatWidget/ChatWidget";
 
 export default function ProductListing() {
     const [called, setCalled] = useState(false);
@@ -47,6 +44,7 @@ export default function ProductListing() {
                         }).then((data) => {
                             localStorage.setItem("name", data["name"]);
                             localStorage.setItem("username", data["login"]);
+                            localStorage.setItem("email", data["email"]);
                             localStorage.setItem("avatar_url", data["avatar_url"]);
                             window.location.href = "/";
                         }).catch((err) => {
