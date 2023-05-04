@@ -1,5 +1,4 @@
 // import React from "react";
-
 // const ProductComparisonTable = ({ products }) => {
 //   return (
 //     <table>
@@ -111,9 +110,11 @@
 // export default ProductComparisonTable;
 
 import React from "react";
-
-const ProductComparisonTable = ({ products }) => {
-  console.log(products);
+import ProductContext from "../../ProductContext";
+const ProductComparisonTable = ({ products, getSelectedProduct }) => {
+  // const [selectedProducts, setSelectedProducts] = useContext(ProductContext);
+  const selectedProducts = getSelectedProduct();
+  console.log(selectedProducts);
   return (
     <div
     // style={{
@@ -132,7 +133,7 @@ const ProductComparisonTable = ({ products }) => {
         <tbody>
           <tr>
             <td></td>
-            {products.map((product, index) => (
+            {selectedProducts.map((product, index) => (
               <td>1 {product.product_name}</td>
             ))}
           </tr>

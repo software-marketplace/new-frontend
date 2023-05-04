@@ -82,6 +82,28 @@ export default function SingleProduct() {
     }
   }, [product]);
 
+  // async function handleCheckout() {
+  //   const stripe = await getStripe();
+  //   const email = localStorage.getItem("email");
+
+  //   if(!email || email==undefined || email==null)
+  //   {alert("Please Login first");
+  //   return;
+  // }
+  //   const { error } = await stripe.redirectToCheckout({
+  //     lineItems: [
+  //       {
+  //         price: process.env.NEXT_PUBLIC_STRIPE_PRICE_ID,
+  //         quantity: 1,
+  //       },
+  //     ],
+  //     mode: 'subscription',
+  //     successUrl: `http://localhost:3002/success`,
+  //     cancelUrl: `http://localhost:3002/${params.slug}`,
+  //     customerEmail: `${email}`,
+  //   });
+  //   console.warn(error.message);
+  // }
   const lightBoxHandler = (state, sIndex) => {
     setToggle(state);
     setSIndex(sIndex);

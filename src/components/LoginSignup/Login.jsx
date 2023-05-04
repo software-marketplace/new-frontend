@@ -23,6 +23,7 @@ export default function Login({ setLoginClose, setIsModalOpen, setUser }) {
             const { access_token, name } = await response.json();
             localStorage.setItem("access_token", access_token);
             localStorage.setItem("name", name);
+            localStorage.setItem("email",email);
             setIsModalOpen(false);
         } else {
             setError("Invalid Credentials");

@@ -6,9 +6,11 @@ import SingleProduct from "./pages/productOpen.jsx/SingleProduct";
 import Footer from "../src/components/footer/Footer";
 import ProductsPage from "./pages/productspage/ProductsPage";
 import ProductComparisonTable from "./components/compare/ProductComparisonTable";
-// import ProductContext from "./ProductContext";
+import ProductContext from "./ProductContext";
 import Faq from "./pages/faq";
 import { useState } from "react";
+import { DeveloperBoard } from "@mui/icons-material";
+import DeveloperDashboard from "./components/developer/DeveloperDashboard";
 // import ProductComparisonTable from './ProductComparisonTable';
 export default function App() {
   const [openChat, setOpenChat] = useState(false);
@@ -48,12 +50,16 @@ export default function App() {
     return selectedProducts.length;
   };
 
+  const getSelectedProduct = () => {
+    return selectedProducts;
+  };
+
   useEffect(() => {
     console.log("New selected products ", selectedProducts);
   }, [selectedProducts]);
 
   return (
-    // <ProductContext.Provider value={[selectedProducts, setSelectedProducts]}>
+    <ProductContext.Provider value={[selectedProducts, setSelectedProducts]}>
     <>
       {/* <Navbar /> */}
       <div className="h">
@@ -92,14 +98,15 @@ export default function App() {
               <Route path="faq" element={<Faq />} />
               <Route
                 path="/product-comparison-table"
-                element={<ProductComparisonTable products={selectedProducts} />}
+                element={<ProductComparisonTable products={selectedProducts} getSelectedProduct={getSelectedProduct}/>}
               />
             </Route>
+            <Route path="/developer" element={<DeveloperDashboard />} ></Route>
           </Routes>
           <Footer />
         </BrowserRouter>
       </div>
     </>
-    // </ProductContext.Provider>
+     </ProductContext.Provider>
   );
 }
