@@ -271,9 +271,11 @@ a {
 }
 .pg-footer {
   font-family: "Roboto", sans-serif;
+  min-width: 50.5em;
 }
 
 .footer {
+  margin-top: 2em;
   background-color: green;
   color: #fff;
 }
@@ -293,7 +295,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: 1230px;
-  padding: 40px 15px 450px;
+  padding: 40px 15px 350px;
   position: relative;
 }
 
@@ -523,7 +525,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     max-width: 1230px;
-    padding: 40px 15px 1050px;
+    padding: 40px 15px 900px;
     position: relative;
   }
 }
@@ -542,7 +544,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     max-width: 1230px;
-    padding: 40px 15px 450px;
+    padding: 40px 15px 350px;
     position: relative;
   }
 

@@ -23,7 +23,9 @@ li .previous a {
   align-items: center;
   user-select: none;
 }
-
+.paginate a {
+  color: green;
+}
 .paginate .previous,
 .paginate .next {
   border: 1px solid green;

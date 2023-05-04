@@ -87,6 +87,15 @@ export default function SingleProduct() {
     setSIndex(sIndex);
   };
 
+<<<<<<< HEAD
+=======
+    return (
+        <>
+            <Navbar />
+            {/* <Navbar openChat={openChat} setOpenChat={setOpenChat} currentUser={currentUser} setCurrentUser={setCurrentUser} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} openLogin={openLogin} setOpenLogin={setOpenLogin} /> */}
+
+
+>>>>>>> 37b22d8dedaf3d15d035cf80413771de08c472b0
   return (
     <>
       <Navbar />
@@ -111,6 +120,10 @@ export default function SingleProduct() {
                         />
                       </div>
                       {/* <LightBox
+<<<<<<< HEAD
+=======
+
+>>>>>>> 37b22d8dedaf3d15d035cf80413771de08c472b0
                     state={toggle}
                     event={lightBoxHandler}
                     data={data}
@@ -121,9 +134,69 @@ export default function SingleProduct() {
                     setImageIndex={setSIndex}
                     imageIndex={sIndex}
                   /> */}
+<<<<<<< HEAD
                     </>
                   ))}
                   {/* <ImageSection lightBoxHandler={lightBoxHandler} /> */}
+=======
+                                </>
+                            ))}
+                            {/* <ImageSection lightBoxHandler={lightBoxHandler} /> */}
+                        </div>
+
+                        <div className="recipe-content">
+                            <h1 className="recipe-title">
+                                <a href="#">{product.product_name}</a>
+                            </h1>
+                            <p className="recipe-metadata">
+                                <span className="recipe-rating">★★★★</span>
+                                <span className="recipe-votes">{product.reviews.length}</span>
+                            </p>
+                            <h1 className="recipe-pricetag">{"Rs." + product.Price}</h1>
+                            <button className="recipe-save" type="button" onClick={() => { }}>
+                                Contact Developer
+                            </button>
+                            <p className="recipe-desc">{product.description}</p>
+                            <h2 className="subHeader">Highlights</h2>
+                            <ul className="listedItem">
+                                <li>Admin Dashbard</li>
+                                <li>Highly Cursomizable</li>
+                                <li>Highly Cursomizable</li>
+                                <li>Easy revenue tracking</li>
+                                <li>Admin dashboard</li>
+                                <li>Highly Cursomizable</li>
+                            </ul>
+
+                  <div className="detailSection">
+                    <h2 className="subHeader">Details</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Esse rerum hic ratione numquam quos praesentium dolor a
+                      consequatur nisi ipsam voluptatem, magnam tempore, aliquid
+                      cupiditate dolorum impedit unde velit omnis suscipit
+                      blanditiis? Nemo suscipit qui animi? Neque ipsum
+                      consequatur deserunt earum iure inventore nam magni,
+                      tenetur vel, necessitatibus veritatis ullam odit aliquam?
+                      Repellendus, at! Dolorem libero odio quos tenetur
+                      temporibus minus commodi, omnis error?
+                    </p>
+                  </div>
+                  <div className="review">
+                    {product.reviews.map(
+                      (item, index) => (
+                        <Review
+                          rating={item.rating}
+                          comment={item.comment}
+                          id={item.id}
+                          user={item.user}
+                        />
+                      )
+                      // <Review item={item}/>
+                    )}
+                    {/* {product.reviews} */}
+                  </div>
+
+>>>>>>> 37b22d8dedaf3d15d035cf80413771de08c472b0
                 </div>
 
                 <div className="recipe-content">

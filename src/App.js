@@ -31,6 +31,11 @@ export default function App() {
   const handleProductRemove = (product) => {
     const newSelectedProducts = selectedProducts.filter(
       (p) => p._id !== product._id
+      // const [openChat, setOpenChat] = useState(false);
+      // const [isLoggedIn, setIsLoggedIn] = useState(false);
+      // const [currentUser, setCurrentUser] = useState(null);
+      // const [openLogin, setOpenLogin] = useState(false);
+
     );
     setSelectedProducts(newSelectedProducts);
   };

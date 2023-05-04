@@ -75,6 +75,7 @@ const ProductsPage = ({
   };
   const tags = [];
 
+
   data.forEach((product) => {
     product.tags.forEach((tag) => (tags.includes(tag) ? null : tags.push(tag)));
   });

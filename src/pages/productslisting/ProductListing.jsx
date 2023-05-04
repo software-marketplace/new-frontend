@@ -44,7 +44,11 @@ export default function ProductListing() {
                 Authorization: `token ${data["access_token"]}`,
               },
             })
+<<<<<<< HEAD
               .then((res) => {
+=======
+/*              .then((res) => {
+>>>>>>> 37b22d8dedaf3d15d035cf80413771de08c472b0
                 return res.json();
               })
               .then((data) => {
@@ -62,7 +66,41 @@ export default function ProductListing() {
           console.log(err);
         });
     }
+<<<<<<< HEAD
   }, [called]);
+=======
+  }, [called]); */
+                .then((res) => {
+                    return res.json();
+                })
+                .then((data) => {
+                    if (data["access_token"]) {
+                        localStorage.setItem("access_token", data["access_token"]);
+                        fetch(`https://api.github.com/user`, {
+                            method: "GET",
+                            headers: {
+                                Accept: "application/json",
+                                Authorization: `token ${data["access_token"]}`
+                            },
+                        }).then((res) => {
+                            return res.json();
+                        }).then((data) => {
+                            localStorage.setItem("name", data["name"]);
+                            localStorage.setItem("username", data["login"]);
+                            localStorage.setItem("email", data["email"]);
+                            localStorage.setItem("avatar_url", data["avatar_url"]);
+                            window.location.href = "/";
+                        }).catch((err) => {
+                            console.log(err);
+                        })
+                    }
+                })
+                .catch((err) => {
+                    console.log(err);
+                })
+        }
+    }, [called])
+>>>>>>> 37b22d8dedaf3d15d035cf80413771de08c472b0
 
   return (
     <>
