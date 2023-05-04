@@ -1,13 +1,8 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import Homepage from "./pages/homepage/Homepage";
-import { BrowserRouter, Route, Routes, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProductListing from "./pages/productslisting/ProductListing";
-import LoginSignup from "./pages/login-signupmodal/loginSignup";
-import DeveloperDashbord from "./pages/develperDashboard/DeveloperDashbord";
-// import Navbar from './components/Navbar/Navbar';
 import SingleProduct from "./pages/productOpen.jsx/SingleProduct";
-import UserDashboard from "./pages/userDashboard/userDashboard";
 import Footer from "../src/components/footer/Footer";
 import ProductsPage from "./pages/productspage/ProductsPage";
 import ProductComparisonTable from "./components/compare/ProductComparisonTable";
@@ -36,6 +31,10 @@ export default function App() {
   const handleProductRemove = (product) => {
     const newSelectedProducts = selectedProducts.filter(
       (p) => p._id !== product._id
+      // const [openChat, setOpenChat] = useState(false);
+      // const [isLoggedIn, setIsLoggedIn] = useState(false);
+      // const [currentUser, setCurrentUser] = useState(null);
+      // const [openLogin, setOpenLogin] = useState(false);
     );
     setSelectedProducts(newSelectedProducts);
   };
