@@ -8,6 +8,8 @@ const HorizontalPost = ({
   description,
   builtBy,
   techStack,
+    contactDeveloper,
+    email,
   price,
   rating,
   _id,
@@ -52,7 +54,7 @@ const HorizontalPost = ({
           ({rating})
         </div>
         <Link>
-          <button className={styles.btn}>Contact Developer</button>
+          <button className={styles.btn} onClick={() => contactDeveloper(email)}>Contact Developer</button>
         </Link>
         <span className={styles.btnSec}>
           {selected ? (

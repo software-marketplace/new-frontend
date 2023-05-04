@@ -18,7 +18,7 @@ import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import { baseUrl } from '../../config';
 import { Close } from '@mui/icons-material';
 
-function ChatWidget({isOpen, setIsOpen}) {
+function ChatWidget({isOpen, setIsOpen, email}) {
     const [messageInputValue, setMessageInputValue] = useState("");
     const [conversations, setConversations] = useState([]);
     const [focusedConversation, setFocusedConversation] = useState(null);
@@ -28,7 +28,7 @@ function ChatWidget({isOpen, setIsOpen}) {
     useEffect(() => {
         if (conversations.length === 0) fetchConversations();
 
-        if (socket !== null) {
+        if (socket === null) {
             const socket = io("http://localhost:8000", {
                 auth: {
                     token: localStorage.getItem("access_token"),
@@ -39,11 +39,67 @@ function ChatWidget({isOpen, setIsOpen}) {
                 setSocket(socket);
                 console.log("connected");
             });
+
+            socket.onAny((event, ...args) => {
+                console.log(event, args);
+            })
+
+            socket.on("message", (data) => {
+                console.log('socket on message')
+                //console.log(data);
+                //const message = JSON.parse(data);
+                //if (message.sender === localStorage.getItem("email")) return;
+                //const newMessage = {
+                    //id: messages.length,
+                    //sender: message.sender,
+                    //message: message.message,
+                    //timestamp: message.timestamp,
+                //};
+                //setMessages([newMessage, ...messages]);
+                fetchMessages()
+            });
+
         }
+
+        console.log('socket useEffect');
 
     }, []);
 
+    useEffect(() => {
+        let prevConvo = false;
+        for (let convo of conversations) {
+            if (convo.name === email) {
+                setFocusedConversation(convo.id);
+                fetchMessages(convo.id);
+                prevConvo = true;
+                break;
+            }
+        }
+
+        if (prevConvo) return;
+        setConversations([...conversations, {
+                    id: conversations.length,
+                    name: email,
+                    info: "",
+                    lastSenderName: "",
+                    messages: [],
+                    onClick: function() {
+                        sendMessage();
+                        setFocusedConversation(conversations.length);
+                    },
+
+                    // dummy
+                    avatarUrl: "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50",
+                    status: "available",
+                    active: true,
+                    unreadDot: true,
+        }]);
+        console.log('email useEffect');
+    }, [email]);
+
     const sendMessage = () => {
+        if (focusedConversation === null || focusedConversation === undefined) return;
+        console.log('sendMessage');
         socket.emit("message", JSON.stringify({
             sender: localStorage.getItem("email"),
             receiver: conversations[focusedConversation].name,
@@ -58,7 +114,7 @@ function ChatWidget({isOpen, setIsOpen}) {
             sentTime: new Date(),
             direction: "outgoing",
         }
-        setMessages([...messages, newMessage]);
+        setMessages([newMessage, ...messages]);
         setMessageInputValue("")
     }
 
@@ -85,7 +141,7 @@ function ChatWidget({isOpen, setIsOpen}) {
                 }
             });
 
-            setMessages(messages.reverse());
+            setMessages(messages);
         } else {
             console.log("error");
             console.log(response.status);
@@ -134,14 +190,16 @@ function ChatWidget({isOpen, setIsOpen}) {
 
     const renderConversationHeader = () => {
         const CloseButton = <Close onClick={() => setIsOpen(false)} style={{ cursor: "pointer" }}/>;
-        if (focusedConversation === null) return (
+        if (focusedConversation === null || focusedConversation === undefined) return (
             <ConversationHeader>
                 <ConversationHeader.Actions>
-            {CloseButton}
+                    {CloseButton}
                 </ConversationHeader.Actions>
             </ConversationHeader>
         );
 
+        console.log('renderConversationHeader');
+        console.log(conversations, focusedConversation);
         const { name, avatarUrl, } = conversations[focusedConversation];
         return (
             <ConversationHeader>
@@ -156,10 +214,14 @@ function ChatWidget({isOpen, setIsOpen}) {
     }
 
     const renderMessages = () => {
-        if (focusedConversation === null) return <></>;
+        if (focusedConversation === null || focusedConversation === undefined) return <></>;
+        const reversedMessages = [];
+        for(let i=messages.length-1; i>=0; i--) {
+            reversedMessages.push(messages[i]);
+        }
 
         return <MessageList>
-            {messages.map((message) => {
+            {reversedMessages.map((message) => {
                 return <Message model={{
                     message: message.message,
                     sentTime: "15 mins ago",

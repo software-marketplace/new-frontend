@@ -13,15 +13,21 @@ import { DeveloperBoard } from "@mui/icons-material";
 import DeveloperDashboard from "./components/developer/DeveloperDashboard";
 // import ProductComparisonTable from './ProductComparisonTable';
 export default function App() {
-  const [openChat, setOpenChat] = useState(false);
-  const [users, setUsers] = useState([
-    { email: "priyanka.makhija05@gmail.com", password: "Abc@123!" },
-  ]);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [currentUser, setCurrentUser] = useState(null);
-  const [openLogin, setOpenLogin] = useState(false);
-  const [selectedProducts, setSelectedProducts] = useState([]);
-  const handleProductSelect = (product) => {
+
+    function contactDeveloper(email) {
+        console.log('in')
+        setEmail(email);
+        localStorage.getItem("access_token") ? setIsOpen(true) : setOpenLogin(true);
+    };
+
+    const [email, setEmail] = useState("");
+    const [isOpen, setIsOpen] = useState(false);
+    const [openChat, setOpenChat] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [currentUser, setCurrentUser] = useState(null);
+    const [openLogin, setOpenLogin] = useState(false);
+    const [selectedProducts, setSelectedProducts] = useState([]);
+    const handleProductSelect = (product) => {
     console.log("in HPS");
     if (selectedProducts.length >= 3) return false;
     const newSelectedProducts = [...selectedProducts, product];
@@ -37,7 +43,6 @@ export default function App() {
       // const [isLoggedIn, setIsLoggedIn] = useState(false);
       // const [currentUser, setCurrentUser] = useState(null);
       // const [openLogin, setOpenLogin] = useState(false);
-
     );
     setSelectedProducts(newSelectedProducts);
   };
@@ -63,6 +68,8 @@ export default function App() {
     <>
       {/* <Navbar /> */}
       <div className="h">
+                {localStorage.getItem("access_token") ?
+                    <ChatWidget email={email} isOpen={isOpen} setIsOpen={setIsOpen} /> : <></>}
         <BrowserRouter>
           <Routes>
             <Route path="/">
@@ -73,6 +80,7 @@ export default function App() {
                 element={
                   <ProductsPage
                     handleProductRemove={handleProductRemove}
+                    contactDeveloper={contactDeveloper}
                     handleProductSelect={handleProductSelect}
                     isProductSelected={isProductSelected}
                     getSelectedProductCount={getSelectedProductCount}
@@ -85,6 +93,7 @@ export default function App() {
                   <SingleProduct
                     setOpenLogin={setOpenLogin}
                     openLogin={openLogin}
+                    contactDeveloper={contactDeveloper}
                     openChat={openChat}
                     setOpenChat={setOpenChat}
                     currentUser={currentUser}

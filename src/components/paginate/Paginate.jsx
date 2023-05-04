@@ -8,6 +8,7 @@ function Items({
   handleProductRemove,
   handleProductSelect,
   isProductSelected,
+    contactDeveloper,
 }) {
   return (
     <div className="itemsContainer">
@@ -23,6 +24,8 @@ function Items({
             builtBy={product.built_by}
             price={product.price}
             rating={product.rating}
+            contactDeveloper={contactDeveloper}
+            email={product.email}
             techStack={[
               ...product.compare.frontend,
               ...product.compare.backend,
@@ -44,6 +47,7 @@ function PaginatedItems({
   handleProductRemove,
   handleProductSelect,
   isProductSelected,
+    contactDeveloper,
 }) {
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
@@ -70,6 +74,7 @@ function PaginatedItems({
     <div style={{ width: "100%" }}>
       <Items
         currentItems={currentItems}
+      contactDeveloper={contactDeveloper}
         handleProductSelect={handleProductSelect}
         handleProductRemove={handleProductRemove}
         isProductSelected={isProductSelected}

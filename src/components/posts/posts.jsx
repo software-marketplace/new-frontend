@@ -4,21 +4,21 @@ import "./posts.css";
 import VerticalPost from "../post/VerticalPost";
 import { baseUrl } from "../../config";
 
-export default function posts() {
-    const [data,setData] = useState([]);
+export default function Posts() {
+    const [data, setData] = useState([]);
     useEffect(() => {
         fetch(`${baseUrl}/products`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
         })
-          .then((res) => res.json())
-          .then((res2) => {
-            setData(res2);
-            // Data = res2;
-          });
-      }, []);
+            .then((res) => res.json())
+            .then((res2) => {
+                setData(res2);
+                // Data = res2;
+            });
+    }, []);
     const top_posts = data.slice(0, 9);
     //console.log(top_posts);
     return (
