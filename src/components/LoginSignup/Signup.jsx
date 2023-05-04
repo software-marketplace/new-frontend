@@ -57,10 +57,10 @@ export default function Signup({ setLoginClose, setIsModalOpen, setUser }) {
                     <div className="login-form">
                         <h2>SignUp</h2>
                         <form onSubmit={handleSignup}>
-                            <p> <input type="text" placeholder="Name*" required onChange={handleChange} /> </p>
-                            <p> <input type="text" placeholder="Email Address*" required onChange={handleChange} /> </p>
-                            <p> <input type="password" placeholder="Password*" required onChange={handleChange} /> </p>
-                            <p> <input type="tel" placeholder="Mobile Number*" required onChange={handleChange} /> </p>
+                            <p> <input type="text" name="name" placeholder="Name*" required onChange={handleChange} /> </p>
+                            <p> <input type="text" name="email" placeholder="Email Address*" required onChange={handleChange} /> </p>
+                            <p> <input type="password" name="password" placeholder="Password*" required onChange={handleChange} /> </p>
+                            <p> <input type="tel" name="mobile" placeholder="Mobile Number*" required onChange={handleChange} /> </p>
                             <p className="error">{error}</p>
 
                             <p> <input type="submit" defaultValue="Sign In" /> </p>

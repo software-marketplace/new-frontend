@@ -5,6 +5,7 @@ import ProductListing from "./pages/productslisting/ProductListing";
 import SingleProduct from "./pages/productOpen.jsx/SingleProduct";
 import Footer from "../src/components/footer/Footer";
 import ProductsPage from "./pages/productspage/ProductsPage";
+
 import ProductComparisonTable from "./components/compare/ProductComparisonTable";
 // import ProductContext from "./ProductContext";
 import Faq from "./pages/faq";
@@ -35,6 +36,7 @@ export default function App() {
       // const [isLoggedIn, setIsLoggedIn] = useState(false);
       // const [currentUser, setCurrentUser] = useState(null);
       // const [openLogin, setOpenLogin] = useState(false);
+
     );
     setSelectedProducts(newSelectedProducts);
   };

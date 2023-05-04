@@ -35,7 +35,7 @@ const HorizontalPost = ({
         </p>
       </div>
       <div className={styles.right}>
-        <h3 className={styles.price}>&#x20B9;{price}</h3>
+        <h3 className={styles.price}>&#x20B9; {price}</h3>
         <div className={styles.rating}>
           {[...Array(Math.ceil(rating))].map((_, i) => (
             <svg

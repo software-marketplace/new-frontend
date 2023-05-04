@@ -75,28 +75,38 @@ const ProductsPage = ({
   };
   const tags = [];
 
-  data.forEach((product) => {
-    product.tags.forEach((tag) => (tags.includes(tag) ? null : tags.push(tag)));
-  });
 
-  // filter category
-  let finalData =
-    category === ""
-      ? data
-      : data.filter((product) => product.tags.includes(category));
+    const fetchFilteredData = () => {
+        fetch(`${baseUrl}/products?filter_min_rating=${rating}&filter_categories=${category}&filter_price=${price.to}-${price.from}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        }).then((res) => res.json()).then((res2) => {
+            setData(res2);
+        });
+    }
+    const tags = [];
 
-  // filter price
-  finalData =
-    price.from === "" || price.to === ""
-      ? finalData
-      : finalData.filter(
-          (prod) =>
-            prod.Price <= parseInt(price.to) &&
-            prod.Price >= parseInt(price.from)
-        );
+    data.forEach((product) => {
+        product.tags.forEach((tag) => (tags.includes(tag) ? null : tags.push(tag)));
+    });
 
-  // filter rating
-  finalData = finalData.filter((prod) => prod.rating >= rating);
+    // filter category
+    let finalData =
+        category === ""
+            ? data
+            : data.filter((product) => product.tags.includes(category));
+
+    // filter price
+    finalData =
+        price.from === "" || price.to === ""
+            ? finalData
+            : finalData.filter(
+                (prod) =>
+                    prod.Price <= parseInt(price.to) &&
+                    prod.Price >= parseInt(price.from)
+            );
 
   // const handleProductSelect = (product) => {
   //   console.log("in HPS");
@@ -250,6 +260,7 @@ const ProductsPage = ({
       {/* <ProductComparisonTable products={selectedProducts} /> */}
     </div>
   );
+
 };
 
 export default ProductsPage;

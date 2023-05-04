@@ -3,6 +3,8 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@chatscope/chat-ui-kit-react": "^1.10.1",
+        "@chatscope/chat-ui-kit-styles": "^1.4.0",
         "@coreui/coreui": "^4.2.6",
         "@mui/icons-material": "^5.11.16",
         "@mui/material": "^5.12.0",
@@ -14,6 +16,7 @@
         "mdb-react-ui-kit": "^5.1.0",
         "node-sass": "npm:sass@^1.55.0",
         "react": "^18.2.0",
+        "react-chat-engine": "^1.11.28",
         "react-dom": "^18.2.0",
         "react-modal-image": "^2.6.0",
         "react-paginate": "^8.2.0",

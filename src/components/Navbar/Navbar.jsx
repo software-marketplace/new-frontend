@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isLogin, setIsLogin] = useState(true);
 
     const handleShowNavbar = () => {
         setShowNavbar(!showNavbar);
@@ -30,7 +31,7 @@ const Navbar = () => {
 
                     <div className={`nav-elements  ${showNavbar && "active"}`}>
                         {localStorage.getItem("access_token") ? (
-                            <ProfileDropdown />
+                            <ProfileDropdown setIsLogin />
                         ) : (
                             <ul>
                                 <li>
