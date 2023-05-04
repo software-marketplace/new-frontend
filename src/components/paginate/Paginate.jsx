@@ -3,7 +3,7 @@ import ReactPaginate from "react-paginate";
 import HorizontalPost from "../post/HorizontalPost";
 import "./paginate.css";
 
-function Items({ currentItems }) {
+function Items({ currentItems, contactDeveloper }) {
   return (
     <div className="itemsContainer">
       {currentItems &&
@@ -18,6 +18,8 @@ function Items({ currentItems }) {
             builtBy={product.built_by}
             price={product.price}
             rating={product.rating}
+            contactDeveloper={contactDeveloper}
+            email={product.email}
             techStack={[
               ...product.compare.frontend,
               ...product.compare.backend,
@@ -29,7 +31,7 @@ function Items({ currentItems }) {
   );
 }
 
-function PaginatedItems({ itemsPerPage, items }) {
+function PaginatedItems({ itemsPerPage, items, contactDeveloper }) {
   // Here we use item offsets; we could also use page offsets
   // following the API or data you're working with.
   const [itemOffset, setItemOffset] = useState(0);
@@ -53,7 +55,7 @@ function PaginatedItems({ itemsPerPage, items }) {
 
   return (
     <div style={{ width: "100%" }}>
-      <Items currentItems={currentItems} />
+      <Items currentItems={currentItems} contactDeveloper={contactDeveloper}/>
       <ReactPaginate
         breakLabel="..."
         nextLabel="next >"

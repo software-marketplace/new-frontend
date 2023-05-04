@@ -9,7 +9,7 @@ import Review from "../../components/post/Review";
 import Navbar from "../../components/Navbar/Navbar";
 
 // export default function SingleProduct({openChat, setOpenChat, currentUser, setCurrentUser, isLoggedIn, setIsLoggedIn, openLogin, setOpenLogin}) {
-export default function SingleProduct() {
+export default function SingleProduct({ contactDeveloper }) {
     let params = useParams();
     console.log("params=", params.slug);
     console.log("data = ", data[Number(params.slug)]);
@@ -82,7 +82,7 @@ export default function SingleProduct() {
                                 <span className="recipe-votes">{product.reviews.length}</span>
                             </p>
                             <h1 className="recipe-pricetag">{"Rs." + product.Price}</h1>
-                            <button className="recipe-save" type="button" onClick={() => { }}>
+                            <button className="recipe-save" type="button" onClick={() => contactDeveloper(product.email) }>
                                 Contact Developer
                             </button>
                             <p className="recipe-desc">{product.description}</p>
@@ -144,16 +144,15 @@ export default function SingleProduct() {
                             <p className="recipe-desc">
                                 Here we can tell about the developer
                             </p>
-                            <button className="recipe-save" type="button">
+                            <button className="recipe-save" type="button" onClick={() => contactDeveloper(product.email) }>
                                 Contact Developer
                             </button>
                         </div>
                     </article>
                 </div>
             </div>
-            {openChat && (
-                <ChatWidget username={"priyanka@gmail.com"} devUsername={""} />
-            )}
         </>
     );
 }
+//{openChat && ( <ChatWidget username={"priyanka@gmail.com"} devUsername={""} />
+//)}

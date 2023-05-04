@@ -6,7 +6,7 @@ import PaginatedItems from "../../components/paginate/Paginate";
 // import Data from "../../devhustle.json";
 import { baseUrl } from "../../config";
 
-const ProductsPage = () => {
+const ProductsPage = ({ contactDeveloper }) => {
     const [data, setData] = useState([]);
     const [searchQuery, setSearchQuery] = useState("");
     const [category, setCategory] = useState("");
@@ -14,6 +14,7 @@ const ProductsPage = () => {
     const [rating, setRating] = useState(0);
     const fromPrice = useRef();
     const toPrice = useRef();
+    console.log(contactDeveloper)
 
     let Data;
     useEffect(() => {
@@ -193,7 +194,7 @@ const ProductsPage = () => {
                     </div>
                 </div>
                 <div className={styles.main}>
-                    <PaginatedItems items={finalData} itemsPerPage={7} />
+                    <PaginatedItems contactDeveloper={contactDeveloper} items={finalData} itemsPerPage={7} />
                 </div>
             </div>
         </div>
