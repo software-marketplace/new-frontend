@@ -41,23 +41,32 @@ export default function SingleProduct() {
             <Navbar />
             {/* <Navbar openChat={openChat} setOpenChat={setOpenChat} currentUser={currentUser} setCurrentUser={setCurrentUser} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} openLogin={openLogin} setOpenLogin={setOpenLogin} /> */}
 
-            <div className="yes">
-                <div className="big">
-                    <article className="recipe bigBox">
-                        <div className="imageHolder">
-                            {product.images.slice(0, 2).map((item, index) => (
-                                <>
-                                    <div className="pizza-box productImage" key={item.id}>
-                                        <img
-                                            src={item}
-                                            className="img"
-                                            onClick={() => {
-                                                lightBoxHandler(true, index);
-                                            }}
-                                            alt=""
-                                        />
-                                    </div>
-                                    {/* <LightBox
+
+  return (
+    <>
+      <Navbar />
+      {!product && <p>Loading...</p>}
+      {/* <Navbar openChat={openChat} setOpenChat={setOpenChat} currentUser={currentUser} setCurrentUser={setCurrentUser} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} openLogin={openLogin} setOpenLogin={setOpenLogin} /> */}
+      {product && (
+        <div className="yes">
+          <>
+            <div className="big">
+              <article className="recipe bigBox">
+                <div className="imageHolder">
+                  {product.images.slice(0, 2).map((item, index) => (
+                    <>
+                      <div className="pizza-box productImage" key={item.id}>
+                        <img
+                          src={item}
+                          className="img"
+                          onClick={() => {
+                            lightBoxHandler(true, index);
+                          }}
+                          alt=""
+                        />
+                      </div>
+                      {/* <LightBox
+
                     state={toggle}
                     event={lightBoxHandler}
                     data={data}
@@ -96,35 +105,35 @@ export default function SingleProduct() {
                                 <li>Highly Cursomizable</li>
                             </ul>
 
-                            <div className="detailSection">
-                                <h2 className="subHeader">Details</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-                                    rerum hic ratione numquam quos praesentium dolor a consequatur
-                                    nisi ipsam voluptatem, magnam tempore, aliquid cupiditate
-                                    dolorum impedit unde velit omnis suscipit blanditiis? Nemo
-                                    suscipit qui animi? Neque ipsum consequatur deserunt earum
-                                    iure inventore nam magni, tenetur vel, necessitatibus
-                                    veritatis ullam odit aliquam? Repellendus, at! Dolorem libero
-                                    odio quos tenetur temporibus minus commodi, omnis error?
-                                </p>
-                            </div>
-                            <div className="review">
-                                {product.reviews.map(
-                                    (item, index) => (
-                                        <Review
-                                            rating={item.rating}
-                                            review={item.review}
-                                            id={item.id}
-                                            user={item.user}
-                                        />
-                                    )
-                                    // <Review item={item}/>
-                                )}
-                                {/* {product.reviews} */}
-                            </div>
-                        </div>
-                    </article>
+                  <div className="detailSection">
+                    <h2 className="subHeader">Details</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Esse rerum hic ratione numquam quos praesentium dolor a
+                      consequatur nisi ipsam voluptatem, magnam tempore, aliquid
+                      cupiditate dolorum impedit unde velit omnis suscipit
+                      blanditiis? Nemo suscipit qui animi? Neque ipsum
+                      consequatur deserunt earum iure inventore nam magni,
+                      tenetur vel, necessitatibus veritatis ullam odit aliquam?
+                      Repellendus, at! Dolorem libero odio quos tenetur
+                      temporibus minus commodi, omnis error?
+                    </p>
+                  </div>
+                  <div className="review">
+                    {product.reviews.map(
+                      (item, index) => (
+                        <Review
+                          rating={item.rating}
+                          comment={item.comment}
+                          id={item.id}
+                          user={item.user}
+                        />
+                      )
+                      // <Review item={item}/>
+                    )}
+                    {/* {product.reviews} */}
+                  </div>
+
                 </div>
                 <div className="small">
                     <article className=" side">

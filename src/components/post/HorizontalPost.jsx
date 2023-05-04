@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./horizontalPost.module.css";
 import { Link } from "react-router-dom";
 
@@ -10,13 +10,22 @@ const HorizontalPost = ({
   techStack,
   price,
   rating,
-  _id
+  _id,
+  handleProductRemove,
+  handleProductSelect,
+  isProductSelected,
+  product,
 }) => {
+  const [selected, setSelected] = useState(false);
+  let style = {};
+  if (selected) style = { backgroundColor: "grey" };
   return (
-    <div className={styles.post}>
+    <div className={styles.post} style={style}>
       <img src={image} alt="" />
       <div className={styles.content}>
-      <Link to={"/product/"+_id}><h2>{name}</h2></Link>
+        <Link to={"/product/" + _id}>
+          <h2>{name}</h2>
+        </Link>
         <span className={styles.builtBy}>by {builtBy}</span>
         <h3>Tech Stack</h3>
         <p>
@@ -46,7 +55,24 @@ const HorizontalPost = ({
           <button className={styles.btn}>Contact Developer</button>
         </Link>
         <span className={styles.btnSec}>
-          <Link>Add to compare</Link>
+          {selected ? (
+            <Link
+              onClick={(e) => {
+                handleProductRemove(product);
+                setSelected(false);
+              }}
+            >
+              Remove from compare
+            </Link>
+          ) : (
+            <Link
+              onClick={(e) => {
+                setSelected(handleProductSelect(product));
+              }}
+            >
+              Add to compare
+            </Link>
+          )}
         </span>
       </div>
     </div>
